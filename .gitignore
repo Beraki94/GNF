@@ -12,8 +12,7 @@ my-backend/.sanity/
 
 # Environment variable files
 .env
-.my-frontend/.env
-.my-backend/.env
+# (You don't need to list the individual .env files, as the above line covers them)
 
 # Logs
 npm-debug.log
