@@ -9,6 +9,7 @@ export const metadata = {
   description: 'A great app using Next.js and Google Fonts',
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
