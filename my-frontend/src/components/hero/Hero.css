@@ -73,7 +73,7 @@
 @media (max-width: 480px) {
   .hero,
   .hero__slide {
-    min-height: 400px;
+    min-height: 600px;
   }
 
   .hero__content {
@@ -98,7 +98,7 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .hero,
   .hero__slide {
-    min-height: 500px;
+    min-height: 600px;
   }
 
   .hero__content {
