@@ -16,11 +16,13 @@ const Footer = () => {
   return (
     <footer className="footer-wrapper">
       <div className="footer-wrapper-inner">
-        <SectionHeader
-          title="Stay Connected"
-          subtitle="Reach out to us anytime"
-          align="center"
-        />
+        <div className="footer__heading">
+          <SectionHeader
+            title="Stay Connected"
+            subtitle="Reach out to us anytime"
+            align="center"
+          />
+        </div>
 
         <div className="footer">
           <div className="footer__main">

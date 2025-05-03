@@ -1,19 +1,20 @@
 .footer-wrapper {
   background-color: var(--grey-05);
-  padding: 1rem;
   width: 100%;
 }
 
-.footer-wrapper-inner {
-  max-width: 1280px;
+.footer-wrapper-inner{
   margin: 0 auto;
+  max-width: 1280px;
+}
+
+.footer__heading{
+  padding: 2rem 0 0 2rem;
 }
 
 .footer {
   background-color: var(--color-cold-dark);
-  padding: 3rem 1.5rem 2rem;
-  border-radius: var(--radius, 0.5rem);
-  margin: 1rem;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .footer__main {
@@ -172,5 +173,11 @@
     align-items: center;
     gap: 0.5rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem;
   }
 }

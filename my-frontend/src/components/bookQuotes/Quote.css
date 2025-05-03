@@ -1,9 +1,11 @@
 .quote__wrapper {
-  padding: 4rem 4rem; /* Adjust as needed */
+  padding: 3rem; /* Adjust as needed */
   box-sizing: border-box;
-  background-color: var(--color-cold-dark);
+  background-color: #C7CADC;
   border-radius: var(--radius-lg);
-  margin: 4rem 0;
+  margin: 4rem 2rem;
+  min-width: 90%;
+
 }
 
 [class^="number-slide"],
@@ -30,7 +32,7 @@
 
 .quote__slide {
   position: relative;
-  height: 300px; /* Or whatever fits your layout */
+  height: 400px; /* Or whatever fits your layout */
   overflow: hidden;
   border-radius: 12px;
 }
@@ -59,5 +61,22 @@
 @media (max-width: 768px) {
   .quote__wrapper {
     padding: 1.5rem;
+  }
+
+  .quote__slide {
+    height: 300px; /* Or whatever fits your layout */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .quote__wrapper {
+    padding: 1.5rem;
+    margin: 3rem 1.5rem;
+  }
+
+  .quote__slide {
+    height: 250px; /* Or whatever fits your layout */
+    border-radius: 8px;
   }
 }

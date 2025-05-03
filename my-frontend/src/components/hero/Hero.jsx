@@ -1,9 +1,34 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./Hero.css";
+
+const slides = [
+  {
+    title: "Your Zarkat",
+    subtitle: "Changing Lives",
+    buttonText: "Join the Movement",
+    image: "/heroImg/hero1.jpg",
+    alt: "Children smiling in a community supported by GodLight Nigeria Foundation",
+  },
+  {
+    title: "Your Zarkat",
+    subtitle: "Empowering Dreams",
+    buttonText: "Support Now",
+    image: "/heroImg/just3.jpg",
+    alt: "Youth learning skills through GodLight Nigeria Foundation programs",
+  },
+  {
+    title: "Your Zarkat",
+    subtitle: "Building Futures",
+    buttonText: "Get Involved",
+    image: "/heroImg/just2.jpg",
+    alt: "Community members collaborating on GodLight Nigeria Foundation initiatives",
+  },
+];
 
 const Hero = () => {
   const [sliderRef] = useKeenSlider(
@@ -47,39 +72,42 @@ const Hero = () => {
   );
 
   return (
-    <section ref={sliderRef} className="hero keen-slider">
-      {/* Slide 1 */}
-      <div className="keen-slider__slide hero__slide hero1">
-        <div className="hero__overlay">
-          <div className="hero__content ">
-            <h1>Your Zarkat</h1>
-            <h2 className="hero__subtitle">Changing Lives</h2>
-            <button className="hero__btn">Join the Movement</button>
+    <section
+      ref={sliderRef}
+      className="hero keen-slider"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="GodLight Nigeria Foundation Hero Carousel"
+    >
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`keen-slider__slide hero__slide hero${index + 1}`}
+          aria-label={`Slide ${index + 1}: ${slide.subtitle}`}
+        >
+          <Image
+            src={slide.image}
+            alt={slide.alt}
+            fill
+            style={{ objectFit: "cover" }}
+            className="hero__image"
+            priority={index === 0}
+          />
+          <div className="hero__overlay">
+            <div className="container hero__content">
+              <h1>{slide.title}</h1>
+              <h2 className="hero__subtitle">{slide.subtitle}</h2>
+              <button
+                type="button"
+                className="hero__btn"
+                aria-label={slide.buttonText}
+              >
+                {slide.buttonText}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* Slide 2 */}
-      <div className="keen-slider__slide hero__slide hero2">
-        <div className="hero__overlay">
-          <div className="hero__content">
-            <h1>Your Zarkat</h1>
-            <h2 className="hero__subtitle">Empowering Dreams</h2>
-            <button className="hero__btn">Support Now</button>
-          </div>
-        </div>
-      </div>
-
-      {/* Slide 3 */}
-      <div className="keen-slider__slide hero__slide hero3">
-        <div className="hero__overlay">
-          <div className="hero__content">
-            <h1>Your Zarkat</h1>
-            <h2 className="hero__subtitle">Building Futures</h2>
-            <button className="hero__btn">Get Involved</button>
-          </div>
-        </div>
-      </div>
+      ))}
     </section>
   );
 };

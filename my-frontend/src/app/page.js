@@ -12,14 +12,9 @@ export default function Home() {
       <div>
         <Hero />
         <StorySection />
-        
         <BlogList />
-        
-        <div className="container">
-          <Quote />
-        </div>
+        <Quote />
         <LearnSection />
-
       </div>
     
   );

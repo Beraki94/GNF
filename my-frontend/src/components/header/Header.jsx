@@ -25,13 +25,14 @@ export default function Header() {
 
   return (
     <header className="header__wrapper">
-      <div className=" container header">
+      <div className="header">
         <Link href="/" className="header__logo" aria-label="Go to homepage">
           <Image
             src="https://static.wixstatic.com/media/648eff_2a48666658494651927c956a82897723~mv2.png/v1/fill/w_759,h_353,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/648eff_2a48666658494651927c956a82897723~mv2.png"
             alt="GodLight Nigeria Foundation Logo"
             width={64}
             height={64}
+            sizes="(max-width: 480px) 48px, (max-width: 768px) 56px, 64px"
             className="header__logo-image"
           />
           <span className="header__brand">GodLight Nigeria Foundation</span>
@@ -41,12 +42,14 @@ export default function Header() {
           className="header__toggle"
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
           aria-label="Toggle navigation menu"
+          aria-expanded={mobileNavOpen}
         >
-          {mobileNavOpen ? <X size={48} /> : <List size={48} />}
+          {mobileNavOpen ? <X size={24} /> : <List size={24} />}
         </button>
 
         <nav
           className={`header__nav ${mobileNavOpen ? "header__nav--open" : ""}`}
+          role="navigation"
           aria-label="Main navigation"
         >
           {navLinks.map((link, index) => (
@@ -61,7 +64,7 @@ export default function Header() {
               {link.name}
             </Link>
           ))}
-          <div onClick={handleLinkClick}>
+          <div className="header__nav-modal" onClick={handleLinkClick}>
             <PopUpModal />
           </div>
         </nav>
