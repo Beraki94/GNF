@@ -161,14 +161,14 @@ export default function Page() {
               GodLight reveals how experiencing God as Light can illuminate our purpose, deepen our 
               understanding, and inspire a path toward universal love, harmony, and inner peace.
             </p>
-            <a
+            <Link
               href="https://www.amazon.com/dp/your-book-link" // Replace with actual link
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
             >
               Get a Copy
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -206,14 +206,14 @@ export default function Page() {
               This online learning course explores the possibilities and opportunities arising from the intersections of science and spirituality.
             </p>
             
-            <a
+            <Link
               href="https://www.amazon.com/dp/your-book-link" // Replace with actual link
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
             >
               Enroll Now
-            </a>
+            </Link>
           </div>
 
           {/* Left: Book Image */}
@@ -251,14 +251,14 @@ export default function Page() {
               Dr. Barthelemy emphasizes that understanding God as Light can illuminate our purpose, foster universal 
               love, and bridge the gap between scientific inquiry and spiritual belief.
             </p>
-            <a
+            <Link
               href="https://www.youtube.com/watch?v=xtl2YLpJqjE" // Updated to actual YouTube link
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
             >
               View Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -290,14 +290,14 @@ export default function Page() {
                     <h3 className="article-download-card__title">{article.title}</h3>
                   </div>
                   <p className="article-download-card__author">By {article.author}</p>
-                  <a
+                  <Link
                     href={article.fileUrl}
                     download
                     className="article-download-card__btn"
                     aria-label={`Download ${article.title}`}
                   >
                     Download <DownloadSimple size={18} weight="bold" />
-                  </a>
+                  </Link>
                 </div>
               ))
             ) : (
