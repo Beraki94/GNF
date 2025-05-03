@@ -1,9 +1,8 @@
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import "./globals.css";
-import ScrollToTop from "@/components/scrollTotop/ScrollTotop";
-
 import { albertSans, merriweather, poppins } from "../app/font";
+import ScrollToTop from "@/components/scrollTotop/ScrollToTop";
 
 export const metadata = {
   title: 'Your App',
