@@ -70,7 +70,6 @@
 
 /* === Base Styles === */
 html {
-  font-size: 14px; /* Mobile-first base for rem */
   scroll-behavior: smooth;
 }
 
@@ -79,7 +78,7 @@ body {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-md);
   color: var(--grey-75);
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
   overflow-x: hidden;
 }
 
@@ -108,10 +107,6 @@ a {
   transition: var(--transition);
 }
 
-a:hover {
-  color: var(--color-primary);
-}
-
 .container {
   width: 95%;
   max-width: 1200px;
@@ -121,12 +116,9 @@ a:hover {
 /* === Media Queries === */
 /* Smartphones (≤480px) */
 @media (max-width: 480px) {
-  html {
-    font-size: 12px;
-  }
 
   body {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
   }
 
@@ -144,10 +136,7 @@ a:hover {
 }
 
 /* Tablets (481px–768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
+@media (max-width: 768px) {
 
   body {
     font-size: var(--font-size-sm);
@@ -162,16 +151,13 @@ a:hover {
   h6 { font-size: var(--font-size-xs); }  /* 12px */
 
   .container {
-    width: 90%;
+    width: 95%;
     padding-inline: var(--spacing-2);
   }
 }
 
 /* Small Laptops (769px–1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
+@media (max-width: 1024px) {
 
   body {
     font-size: var(--font-size-md);
@@ -186,17 +172,13 @@ a:hover {
   h6 { font-size: var(--font-size-sm); }  /* 14px */
 
   .container {
-    width: 85%;
+    width: 90%;
     padding-inline: var(--spacing-3);
   }
 }
 
 /* Desktops (≥1025px) */
 @media (min-width: 1025px) {
-  html {
-    font-size: 18px;
-  }
-
   body {
     font-size: var(--font-size-md);
     line-height: var(--line-height-lg);
@@ -210,7 +192,7 @@ a:hover {
   h6 { font-size: var(--font-size-md); }  /* 16px */
 
   .container {
-    width: 80%;
+    width: 90%;
     max-width: 1440px;
     padding-inline: var(--spacing-4);
   }

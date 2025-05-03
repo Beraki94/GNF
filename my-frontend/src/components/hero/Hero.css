@@ -29,6 +29,7 @@
 .hero__content {
   text-align: left;
   color: var(--color-logo);
+  margin-top: 6rem;
   padding: var(--spacing-2);
   z-index: 3;
 }

@@ -25,8 +25,7 @@ export default function Header() {
 
   return (
     <header className="header__wrapper">
-      <div className="header">
-        <Link href="/" className="header__logo" aria-label="Go to homepage">
+      <Link href="/" className="header__logo" aria-label="Go to homepage">
           <Image
             src="https://static.wixstatic.com/media/648eff_2a48666658494651927c956a82897723~mv2.png/v1/fill/w_759,h_353,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/648eff_2a48666658494651927c956a82897723~mv2.png"
             alt="GodLight Nigeria Foundation Logo"
@@ -35,18 +34,10 @@ export default function Header() {
             sizes="(max-width: 480px) 48px, (max-width: 768px) 56px, 64px"
             className="header__logo-image"
           />
-          <span className="header__brand">GodLight Nigeria Foundation</span>
+          <span className="header__brand">GodLight <span className="brand__mobile">Nigeria Foundation</span></span>
         </Link>
-
-        <button
-          className="header__toggle"
-          onClick={() => setMobileNavOpen(!mobileNavOpen)}
-          aria-label="Toggle navigation menu"
-          aria-expanded={mobileNavOpen}
-        >
-          {mobileNavOpen ? <X size={24} /> : <List size={24} />}
-        </button>
-
+        
+      <div className="header">
         <nav
           className={`header__nav ${mobileNavOpen ? "header__nav--open" : ""}`}
           role="navigation"
@@ -69,6 +60,14 @@ export default function Header() {
           </div>
         </nav>
       </div>
+      <button
+          className="header__toggle"
+          onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={mobileNavOpen}
+        >
+          {mobileNavOpen ? <X size={40} /> : <List size={40} />}
+        </button>
     </header>
   );
 }
