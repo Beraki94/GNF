@@ -1,12 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link"; // <-- Added this
+import Link from "next/link";
 import { InstagramLogo, YoutubeLogo, FacebookLogo } from "@phosphor-icons/react";
 import "./Footer.css";
 import SectionHeader from "../sectionHeader/SectionHeader";
 
 const Footer = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Placeholder: Add form submission logic (e.g., API call)
+    console.log("Form submitted");
+  };
+
   return (
     <footer className="footer-wrapper">
       <div className="footer-wrapper-inner">
@@ -34,40 +40,75 @@ const Footer = () => {
 
               <p className="footer__description">
                 GodLight Foundation is committed to transforming lives through faith, hope, and love.
-                GodLight Foundation is committed to transforming lives through faith, hope, and love.
-                GodLight Foundation is committed to transforming lives through faith, hope, and love.
               </p>
 
               <div className="footer__socials">
-                <a href="https://instagram.com/godlight" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Link
+                  href="https://instagram.com/godlight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <InstagramLogo size={32} />
-                </a>
-                <a href="https://youtube.com/godlight" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                </Link>
+                <Link
+                  href="https://youtube.com/godlight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
                   <YoutubeLogo size={32} />
-                </a>
-                <a href="https://facebook.com/godlight" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                </Link>
+                <Link
+                  href="https://facebook.com/godlight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <FacebookLogo size={32} />
-                </a>
+                </Link>
               </div>
             </div>
 
             {/* Right Section - Contact Form */}
-            <form className="footer__form">
+            <form className="footer__form" onSubmit={handleSubmit}>
               <h3 className="form__title">Contact Us</h3>
               <div className="footer__form-group">
-                <input type="text" placeholder="First Name" required />
-                <input type="text" placeholder="Last Name" required />
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  aria-label="First Name"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                  aria-label="Last Name"
+                />
               </div>
-              <input type="email" placeholder="Email Address" required />
-              <textarea placeholder="Your Message" rows="4" required></textarea>
-              <button type="submit" aria-label="Submit Contact Form">Submit</button>
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                aria-label="Email Address"
+              />
+              <textarea
+                placeholder="Your Message"
+                rows="4"
+                required
+                aria-label="Your Message"
+              ></textarea>
+              <button type="submit" aria-label="Submit Contact Form">
+                Submit
+              </button>
             </form>
           </div>
 
           {/* Bottom Row */}
           <div className="footer__bottom">
             <p>© {new Date().getFullYear()} GodLight Foundation. All rights reserved.</p>
-            <a href="#">Privacy Policy</a>
+            <Link href="/privacy">Privacy Policy</Link>
           </div>
         </div>
       </div>
