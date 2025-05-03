@@ -1,0 +1,123 @@
+.learn-section {
+  padding: 4rem 1rem;
+  background: #e9e0de;
+}
+
+.learn-section__main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card */
+.learn-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.learn-card__image {
+  flex: 1.2;
+  min-width: 300px;
+  height: 400px;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  overflow: hidden;
+  background-image: url("/bdg2.jpg");
+  background-size: cover;
+}
+
+.learn-card__image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.learn-card__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(24, 73, 117, 0.4); /* semi-transparent blue */
+  z-index: 1;
+}
+
+/* Ensure content stays readable */
+.learn-card__content {
+  flex: 2;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.learn-card__content h3 {
+  font-size: 1.9rem;
+  color: var(--color-cold-dark);
+  margin-bottom: 1rem;
+}
+
+.learn-card__content p {
+  color: var(--color-shade);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+
+.learn-card__content a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--color-cold-dark);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.learn-card__content a:hover {
+  background-color: #12375a;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .learn-card {
+    flex-direction: column;
+  }
+
+  .learn-card__image {
+    display: none;
+  }
+
+  .learn-card__content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Desktop Tweaks */
+@media (min-width: 1024px) {
+  .learn-card__image {
+    flex: 2;
+  }
+
+  .learn-card__content {
+    flex: 3;
+  }
+}

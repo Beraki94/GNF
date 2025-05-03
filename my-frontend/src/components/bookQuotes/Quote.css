@@ -1,0 +1,63 @@
+.quote__wrapper {
+  padding: 4rem 4rem; /* Adjust as needed */
+  box-sizing: border-box;
+  background-color: var(--color-cold-dark);
+  border-radius: var(--radius-lg);
+  margin: 4rem 0;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.keen-slider {
+  width: 100%; /* Or set a specific max width if needed */
+  overflow: hidden;
+}
+
+.keen-slider__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote__slide {
+  position: relative;
+  height: 300px; /* Or whatever fits your layout */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.quote__slide p{
+ font-weight: bold;
+}
+
+.quote__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .quote__wrapper {
+    padding: 1.5rem;
+  }
+}

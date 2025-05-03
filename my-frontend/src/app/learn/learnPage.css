@@ -1,0 +1,282 @@
+.flash-section {
+    padding: 2rem 1rem;
+    background-color: #fff;
+  }
+  
+  .flash-section__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .flash-section__left,
+  .flash-section__right {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1rem;
+    color: #120806;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .flash-section__left p + p {
+    margin-top: 1.5rem;
+  }
+  
+  .flash-section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .flash-section__list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #120806;
+  }
+  
+  .flash-section__list li span {
+    flex: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flash-section__container {
+      flex-direction: column;
+    }
+  }
+  
+  .book-section {
+    padding: 64px 16px;
+    background-color: #C7CADC;
+    text-align: justify;
+  }
+  
+  .book-section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .book-section__image {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    background-image: url("/bdg2.jpg"); /* replace with your actual path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+  }
+  
+  .book-section__image img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .book-section__content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .book-section__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #120806;
+    margin: 0;
+  }
+  
+  .book-section__description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .descripton__subheading {
+    color: #333;
+  }
+  
+  .book-section__cta {
+    display: inline-block;
+    background-color: #ffd800;
+    color: #120806;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    max-width: fit-content;
+  }
+  
+  .book-section__cta:hover {
+    background-color: #e6c000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .book-section__container {
+      flex-direction: column;
+    }
+  
+    .book-section__image {
+     display: none;
+    }
+  }
+  
+
+  .article-download-section {
+    padding: 3rem 0;
+    background-color: #E9E0DE;
+  }
+  
+  .article-download-section__container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .article-download-section__header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #120806;
+    text-align: center;
+  }
+  
+  .article-download-section__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .article-download-section__search input {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  .article-download-section__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .article-download-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 400px;
+    min-height: 340px; /* 🔥 fix card size */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 🔥 separate text & button */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .article-download-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article-download-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #120806;
+    margin-bottom: 0.5rem;
+  }
+  
+  .article-download-card__author {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+  }
+  
+  .article-download-card__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #ffd800;
+    padding: 0.75rem 1.25rem;
+    color: #120806;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .article-download-card__btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  .article-download-section__loadmore {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .loadmore-btn {
+    background-color: #ffd800;
+    color: #120806;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loadmore-btn:hover {
+    background-color: #ffcc00;
+  }
+
+  .no-articles-found {
+    text-align: center;
+    width: 100%;
+    font-size: 1.25rem;
+    color: #555;
+    padding: 2rem 0;
+  }
+  
+  
+  /* ✨ Bonus: Responsive cards on mobile */
+  @media (max-width: 768px) {
+    .article-download-card {
+      width: 100%;
+      min-height: auto;
+    }
+  
+    .article-download-section__search input {
+      width: 100%;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .article-download-section__search input {
+      width: 80%;
+    }
+  }
+  

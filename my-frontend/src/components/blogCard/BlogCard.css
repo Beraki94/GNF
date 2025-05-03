@@ -1,0 +1,138 @@
+/* ========== BLOG SECTION ========== */
+
+.blog-section {
+  background-color: #e5e2cf; /* Light beige background */
+  padding: 4rem 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #120806; /* Main brand color */
+  margin-bottom: 3rem;
+}
+
+/* Grid for blog cards */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* ========== BLOG CARD ========== */
+.blog-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Important to stretch full height */
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card__image-placeholder {
+  width: 100%;
+  height: 250px;
+  background-color: #cbd5e1;
+  border-radius: 16px 16px 0 0;
+}
+
+.blog__img{
+  height: 100%;
+  overflow: hidden;
+}
+/* Flex column */
+.blog-card__details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push bottom item down */
+  flex-grow: 1; /* Take up all remaining space */
+}
+
+/* Inside the details */
+.blog-card__meta {
+  font-size: 0.875rem;
+  color: #777777;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.blog-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #120806;
+  margin: 0;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card__description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: auto; /* Important: push 'read more' to bottom */
+}
+
+.blog-card__read-more {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #065f46;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-card__read-more:hover {
+  color: #0b8457;
+}
+
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .blog-grid {
+    gap: 1.5rem;
+  }
+
+  .blog__title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 2rem 1rem;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .blog__title {
+    font-size: 1.75rem;
+  }
+}
