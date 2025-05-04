@@ -78,7 +78,7 @@ body {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-md);
   color: var(--grey-75);
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   overflow-x: hidden;
 }
 
@@ -196,4 +196,5 @@ a {
     max-width: 1440px;
     padding-inline: var(--spacing-4);
   }
-}
+} 
+

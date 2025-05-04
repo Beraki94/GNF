@@ -1,11 +1,11 @@
 .quote__wrapper {
-  padding: 3rem; /* Adjust as needed */
-  box-sizing: border-box;
-  background-color: #C7CADC;
-  border-radius: var(--radius-lg);
-  margin: 4rem 2rem;
-  min-width: 90%;
+  background-color: var(--color-secondary);
+  padding: 4rem 0;
+}
 
+.quote__container{
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 [class^="number-slide"],
@@ -13,10 +13,7 @@
   background: grey;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
+  
 }
 
 .keen-slider {
@@ -32,6 +29,7 @@
 
 .quote__slide {
   position: relative;
+  width: 400px;
   height: 400px; /* Or whatever fits your layout */
   overflow: hidden;
   border-radius: 12px;
@@ -49,7 +47,7 @@
   background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
   color: #fff;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.75rem;
   font-style: italic;
   font-weight: 500;
   backdrop-filter: blur(4px);
@@ -60,23 +58,29 @@
 
 @media (max-width: 768px) {
   .quote__wrapper {
-    padding: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .quote__overlay {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    
   }
 
   .quote__slide {
-    height: 300px; /* Or whatever fits your layout */
+    height: 400px; /* Or whatever fits your layout */
     overflow: hidden;
     border-radius: 8px;
   }
 }
 @media (max-width: 480px) {
-  .quote__wrapper {
-    padding: 1.5rem;
-    margin: 3rem 1.5rem;
+  .quote__container{
+    
   }
 
   .quote__slide {
-    height: 250px; /* Or whatever fits your layout */
+    height: 350px; /* Or whatever fits your layout */
     border-radius: 8px;
   }
 }

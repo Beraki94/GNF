@@ -7,7 +7,7 @@ import { blogPosts } from "../../app/data/blogData";
 export default function BlogList() {
   return (
     <main className="blog-section">
-      <div className="container">
+      <div className="blog__list">
         <h4 className="blog__title">Latest Blog Posts</h4>
         <div className="blog-grid">
           {blogPosts.map((blog, index) => (

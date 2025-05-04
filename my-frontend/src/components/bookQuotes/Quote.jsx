@@ -22,7 +22,7 @@ const Quote = () => {
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
     slides: {
-      perView: 2,
+      perView: 1,
       spacing: 16,
     },
     breakpoints: {
@@ -37,7 +37,8 @@ const Quote = () => {
 
   return (
     <section className="quote__wrapper">
-      <div ref={sliderRef} className="keen-slider quote__container">
+      <div className="quote__container">
+      <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide quote__slide">
           <Image
             src="/quoteImg/quote1.jpg"
@@ -112,7 +113,7 @@ const Quote = () => {
           </div>
           </div>
         </div>
-    
+        </div>
     </section>
   );
 };

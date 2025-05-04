@@ -21,6 +21,7 @@
 .story-section__text {
   flex: 1;
   min-width: 300px;
+  text-align: justify;
 }
 
 .story-section__text h2 {
@@ -36,7 +37,6 @@
   font-weight: 400;
   color: var(--color-shade);
   margin-bottom: 1.5rem;
-  text-align: justify;
 }
 
 .story-section__text p {
@@ -76,9 +76,6 @@
     
   }
 
-  .story-section__text {
-    text-align: center;
-  }
 
   .story-section__text h2 {
     font-size: 2.2rem;

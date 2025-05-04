@@ -11,9 +11,8 @@ const StorySection = () => {
           <h2>Your Zakat Changes Lives</h2>
           <h2 className="small">Your Zakat is more than just charity—it’s a purification of wealth, a fulfilment of duty, and a means of bringing real change.</h2>
           <p>
-            According to Bart's book, GodLight Foundation was founded with the mission to transform lives through faith, hope, and love. We believe in making a difference in the world by spreading the message of hope and salvation.
-            <br />
-            <br />
+            According to Bart's book, GodLight Foundation was founded with the mission to transform lives 
+            through faith, hope, and love. We believe in making a difference in the world by spreading the message of hope and salvation.
             Through various outreach programs, the foundation has touched 
           </p>
         </div>
