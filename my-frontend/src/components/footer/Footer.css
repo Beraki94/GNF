@@ -103,7 +103,7 @@
 .footer__form textarea {
   padding: 0.75rem;
   border: 1px solid var(--grey-75);
-  background-color: var(--grey-10);
+  background-color: var(--grey-05);
   color: var(--color-shade);
   border-radius: var(--radius-sm);
   width: 100%;

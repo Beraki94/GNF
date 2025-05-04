@@ -8,23 +8,23 @@ import "./Hero.css";
 
 const slides = [
   {
-    title: "Your Zarkat",
-    subtitle: "Changing Lives",
-    buttonText: "Join the Movement",
+    title: "Dreams Illuminated",
+    subtitle: "GodLight Fuels Your Journey",
+    buttonText: "Get Involved",
     image: "/heroImg/hero1.jpg",
     alt: "Children smiling in a community supported by GodLight Nigeria Foundation",
   },
   {
-    title: "Your Zarkat",
-    subtitle: "Empowering Dreams",
-    buttonText: "Support Now",
+    title: "Future Enlightend",
+    subtitle: "Nigeria Thrives Through All",
+    buttonText: "Connect GodLight",
     image: "/heroImg/just3.jpg",
     alt: "Youth learning skills through GodLight Nigeria Foundation programs",
   },
   {
-    title: "Your Zarkat",
-    subtitle: "Building Futures",
-    buttonText: "Get Involved",
+    title: "Unity In GodLight",
+    subtitle: "We Spark Lasting Change",
+    buttonText: "Join the Movement",
     image: "/heroImg/just2.jpg",
     alt: "Community members collaborating on GodLight Nigeria Foundation initiatives",
   },
