@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import PageHeader from '@/components/pageHeader/PageHeader';
+import PageHeader from "@/components/pageHeader/PageHeader";
 import "./about.css";
 
 const founders = [
   {
     name: "Bart Bathelemy",
     role: "Founder/Executive Director",
-    image: "/usaTeamImg/director.png",
+    image: "/usaTeamImg/director.jpg",
   },
   {
     name: "Karen Williams Barthelemy",
@@ -46,46 +46,42 @@ export default function Page() {
       <PageHeader title="GodLight Overview" pageImage="/page3.avif" />
       <section className="overview-section">
         <div className="overview-section__main">
-          {/* Left column */}
           <div className="overview-section__text">
             <h2>GodLight Nigeria Foundation</h2>
             <p>
-              GodLight Nigeria Foundation is a nonprofit organization and the official African
-              extension of the GodLight Foundation, founded by Dr. Bart Barthelemy. Rooted in the
+              <strong>GodLight Nigeria Foundation</strong> is a nonprofit organization and the official African
+              extension of the <strong>GodLight Foundation</strong>, founded by <strong>Dr. Bart Barthelemy</strong>. Rooted in the
               core principles of spiritual awakening and personal transformation, the Nigerian foundation
               is committed to guiding individuals through a deeper exploration of their faith, purpose, and
               connection to God through the concept of Light.
             </p>
-            <br />
             <p>
-              Led by GodLight Ambassador Rev. Sr. Mary Emilia Aboekwe, PhD (IHM), the foundation ensures that the original 
+              Led by GodLight Ambassador <strong>Rev. Sr. Mary Emilia Aboekwe, PhD (IHM)</strong>, the foundation ensures that the original 
               vision is faithfully adapted to the local context. Through community-driven programs, spiritual workshops, 
               and outreach initiatives, the foundation supports individuals—especially those facing life challenges—by 
               offering a safe space for healing, learning, and spiritual growth.
             </p>
-            <br />
             <p>
-              GodLight Nigeria embraces Dr. Barthelemy’s holistic understanding of Light—as external divine presence, 
+              GodLight Nigeria embraces <strong>Dr. Barthelemy’s</strong> holistic understanding of Light—as external divine presence, 
               spiritual illumination, and personal inner radiance—encouraging individuals to embrace their own spiritual 
               path and share that Light with others. At its core, the foundation nurtures love, compassion, and unity across communities in Nigeria and beyond.
             </p>
-            {/* Image band */}
             <div
               className="overview-section__image"
               role="img"
-              aria-label="Smiling volunteers at a GodLight community event"
+              aria-label="Smiling team at a GodLight community event"
             >
               <Image
-                src="/images/community-event.jpg"
-                alt="Smiling volunteers at a GodLight community event"
-                width={500}
-                height={300}
+                src="/Saccc.jpg"
+                alt="Smiling team at a GodLight community event"
+                width={900}
+                height={500}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
+                priority
               />
             </div>
           </div>
-
-          {/* Right column */}
           <div className="overview-section__highlight">
             <div className="about-section__grid first__founder">
               {founders.length > 0 && (
@@ -95,6 +91,7 @@ export default function Page() {
                     alt={founders[0].name}
                     width={200}
                     height={200}
+                    sizes="(max-width: 768px) 100vw, 200px"
                     className="about-section__image"
                   />
                   <h3 className="about-section__name">{founders[0].name}</h3>
@@ -102,7 +99,6 @@ export default function Page() {
                 </div>
               )}
             </div>
-
             <div className="overview-section__highlight-box overview-section__highlight--purpose">
               <h3>OUR MISSION</h3>
               <p>
@@ -112,7 +108,6 @@ export default function Page() {
                 enlightenment, growth, and sustainable change, enabling the youth to become active agents of transformation in their communities and beyond.  
               </p>
             </div>
-
             <div className="overview-section__highlight-box overview-section__highlight--vision">
               <h3>OUR VISION</h3>
               <p>
@@ -126,48 +121,44 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       <section className="gnf-section">
         <div className="gnf-section__main">
-          {/* Left column – narrative */}
           <div className="gnf-section__text">
             <h2>GodLight Foundation</h2>
             <p>
-              The GodLight Foundation, established by Dr. Bart Barthelemy, is a global nonprofit organization that integrates 
+              The <strong>GodLight Foundation, established by Dr. Bart Barthelemy</strong>, is a global nonprofit organization that integrates 
               spiritual insight with scientific discovery to explore the powerful connection between God and Light. Inspired by 
               Dr. Bart’s lifelong research and personal revelations, the foundation serves as a beacon for individuals seeking to understand 
               their creation, purpose, and divine relationship through both spiritual and intellectual inquiry.
             </p>
             <p>
-              GodLight Foundation offers a supportive platform for people of all backgrounds to grow spiritually, reflect deeply, 
+              <strong>GodLight Foundation</strong> offers a supportive platform for people of all backgrounds to grow spiritually, reflect deeply, 
               and connect meaningfully with others. Through educational resources, engaging workshops, and community events, the 
               foundation encourages individuals to discover God’s Light as a guiding force within and around them.
             </p>
             <p>
-              By promoting empathy, shared values, and spiritual empowerment, the GodLight Foundation fosters a global community 
+              By promoting empathy, shared values, and spiritual empowerment, the <strong>GodLight Foundation</strong> fosters a global community 
               rooted in harmony, mutual respect, and the shared human pursuit of divine understanding.
             </p>
           </div>
-
-          {/* Right column – background photo */}
-          <div className="gnf-section__gallery">
+         
             <div
               className="gnf-section__image"
               role="img"
               aria-label="Volunteers and beneficiaries at a GodLight Nigeria outreach"
             >
               <Image
-                src="/images/outreach.jpg"
+                src="/foundation.gl.avif"
                 alt="Volunteers and beneficiaries at a GodLight Nigeria outreach"
                 width={500}
                 height={300}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
-            </div>
+        
           </div>
         </div>
       </section>
-
       <section className="about-section">
         <div className="about-section__container">
           <h2 className="about-section__title">GodLight Team - Global</h2>
@@ -179,6 +170,7 @@ export default function Page() {
                   alt={person.name}
                   width={200}
                   height={200}
+                  sizes="(max-width: 768px) 100vw, 200px"
                   className="about-section__image"
                 />
                 <h3 className="about-section__name">{person.name}</h3>
@@ -186,9 +178,8 @@ export default function Page() {
               </div>
             ))}
           </div>
-
           <h2 className="about-section__title">GodLight Team - Nigeria</h2>
-          <div className="about-section__grid">
+          <div className="about-section__grid nigeria__person">
             {teamNigeria.map((person, index) => (
               <div className="about-section__card" key={index}>
                 <Image
@@ -196,6 +187,7 @@ export default function Page() {
                   alt={person.name}
                   width={200}
                   height={200}
+                  sizes="(max-width: 768px) 100vw, 200px"
                   className="about-section__image"
                 />
                 <h3 className="about-section__name">{person.name}</h3>

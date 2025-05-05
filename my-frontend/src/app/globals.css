@@ -82,6 +82,10 @@ body {
   overflow-x: hidden;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-poppins), sans-serif;
   line-height: var(--line-height-sm);

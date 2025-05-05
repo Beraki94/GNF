@@ -48,7 +48,10 @@ const Quote = () => {
             style={{ objectFit: "cover" }}
           />
             <div className="quote__overlay">
-            <p>"Let your light so shine before men, that they may see your good works and glorify your Father in heaven."</p>
+            <p>
+              If believers see Light (or GodLight) as the fundamental element of everything in the universe, then
+               understanding, collaboration, mutuality, respect, and universal love may be a more reasonable possibility.
+            </p>
           </div>
           </div>
           <div className="keen-slider__slide quote__slide">
@@ -60,7 +63,11 @@ const Quote = () => {
             style={{ objectFit: "cover" }}
           />
           <div className="quote__overlay">
-            <p>"Let your light so shine before men, that they may see your good works and glorify your Father in heaven."</p>
+            <p>
+            When science and spirituality don’t overlap, then they complement each other,
+             offering new possibilities for understanding God’s presence.
+              
+            </p>
           </div>
           </div>
           <div className="keen-slider__slide quote__slide">
@@ -72,7 +79,10 @@ const Quote = () => {
             style={{ objectFit: "cover" }}
           />
           <div className="quote__overlay">
-            <p>"Let your light so shine before men, that they may see your good works and glorify your Father in heaven."</p>
+            <p>
+            When we explore the true essence of light in God, even when
+             faith and reason clash, then we can discover a personal journey toward understanding.
+            </p>
           </div>
           </div>
           <div className="keen-slider__slide quote__slide">
@@ -84,7 +94,10 @@ const Quote = () => {
             style={{ objectFit: "cover" }}
           />
           <div className="quote__overlay">
-            <p>"Let your light so shine before men, that they may see your good works and glorify your Father in heaven."</p>
+            <p>
+            If we accept that God might be bound by the laws of physics,
+             then we can understand why catastrophes happen within a framework of divine mercy.
+            </p>
           </div>
           </div>
           
@@ -97,7 +110,10 @@ const Quote = () => {
             style={{ objectFit: "cover" }}
           />
           <div className="quote__overlay">
-            <p>"Let your light so shine before men, that they may see your good works and glorify your Father in heaven."</p>
+            <p>
+            When we investigate hitherto undiscovered areas of science from
+             a fresh spiritual perspective, then science can explain a faith-based viewpoint
+            </p>
           </div>
           </div>
           <div className="keen-slider__slide quote__slide ">
@@ -109,7 +125,10 @@ const Quote = () => {
             style={{ objectFit: "cover" }}
           />
           <div className="quote__overlay">
-            <p>"Let your light so shine before men, that they may see your good works and glorify your Father in heaven."</p>
+            <p>
+            If we contemplate the intersection of science and
+             spirituality, then we stimulate curiosity and a longing for understanding that transcends both
+            </p>
           </div>
           </div>
         </div>

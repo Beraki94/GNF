@@ -1,71 +1,28 @@
 "use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import PageHeader from "@/components/pageHeader/PageHeader";
-import { CheckCircle, DownloadSimple, MagnifyingGlass } from "@phosphor-icons/react";
+import { CheckCircle, DownloadSimple, MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
 import "./learnPage.css";
 
 const articles = [
   {
     id: 1,
-    title:
-      "THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
+    title: "The Intersection of Divine Inspiration, Human Ingenuity, and Machine Learning",
+    author: "Opene Anayo Daniel",
     fileUrl: "/downloads/godlight-ai.pdf",
   },
   {
     id: 2,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "sunday osita",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 3,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 4,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 5,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 6,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 7,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 8,
-    title:
-      "GODLIGHT, HUMANITY, AND ARTIFICIAL INTELLIGENCE: EXPLORING THE INTERSECTION OF DIVINE INSPIRATION, HUMAN INGENUITY, AND MACHINE LEARNING",
-    author: "OpeneAnayo Daniel",
+    title: "GodLight, Humanity, and Artificial Intelligence: Exploring the Intersection",
+    author: "Sunday Osita",
     fileUrl: "/downloads/godlight-ai.pdf",
   },
 ];
 
-export default function Page() {
+export default function LearnPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
 
@@ -82,87 +39,97 @@ export default function Page() {
   };
 
   return (
-    <div>
+    <div className="learn-page">
       <PageHeader title="Flashes of GodLight" pageImage="/page2.jpg" />
-
       <section className="flash-section">
-        <div className="flash-section__container">
-          {/* Left side - Intro and explanation */}
-          <div className="flash-section__left">
-            <p>
-              The Flash of GodLight is a profound spiritual experience — a moment
-              when the divine light is sensed within or around us, often
-              accompanied by insight, warmth, and peace. It is not always
-              dramatic; sometimes it is a gentle nudge or clarity that steers the
-              soul. This section invites you into a deeper understanding of how
-              to perceive, nurture, and share the Flash in daily life.
-            </p>
-            <p>
-              Understanding and practicing the Flash involves several guiding
-              concepts that serve as daily touchpoints in your spiritual journey.
-              These key ideas provide a simple structure for deepening awareness.
-            </p>
-          </div>
+  <div className="flash-section__container">
+    <h2 className="flash-section__title">
+      Illuminate Your Path: Have a GodLight Conversation
+    </h2>
 
-          {/* Right side - Learning list */}
-          <div className="flash-section__right">
-            <ul className="flash-section__list">
-              <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
-                <span>Origins of the Flash – scriptural, scientific, experiential</span>
-              </li>
-              <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
-                <span>Recognising the Moment – mindfulness cues and journaling</span>
-              </li>
-              <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
-                <span>Nurturing the Spark – daily 5‑minute light‑awareness practice</span>
-              </li>
-              <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
-                <span>Sharing the Light – guiding others through story and service</span>
-              </li>
-              <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
-                <span>Nurturing the Spark – daily 5‑minute light‑awareness practice</span>
-              </li>
-              <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
-                <span>Sharing the Light – guiding others through story and service</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <div className="flash-section__columns">
+      <div className="flash-section__left">
+        <p>
+        <strong>The Flash of GodLight is a profound spiritual experience</strong> — a moment when the divine light is sensed within or around us, often accompanied by insight, warmth, and peace. It is not always dramatic; sometimes it is a gentle nudge or clarity that steers the soul. This section
+        invites you into a deeper understanding of how to perceive, nurture, and share the Flash in daily life.
+        </p>
+        <br/>
+        <p>
+        As a Lightseeker, you are on a quest for deeper understanding and connection. Now, take the next step by engaging in a transformative conversation with a GodLight Beacon
+        </p>
 
-      <section className="book-section">
+        <h3>What is a GodLight Conversation?</h3>
+        <p>
+          A GodLight Conversation is a unique opportunity to explore your own thoughts, feelings,
+          emotions, language and behaviors in relation to the concept of GodLight. Guided by a Beacon,
+          you will delve into how universal love and peace form the foundation of GodLight—a higher
+          order of understanding that connects us all.
+        </p>
+      </div>
+
+      <div className="flash-section__right">
+        <h3>Why a GodLight Conversation?</h3>
+        <ul className="flash-section__list">
+          <li>
+            <CheckCircle size={24} color="#3B3F58" weight="fill" />
+            <span>
+              <strong>Self-Exploration:</strong> Reflect on where you are now in your spiritual journey,
+              and articulate your thoughts, feelings, and behaviors in relation to GodLight.
+            </span>
+          </li>
+          <li>
+            <CheckCircle size={24} color="#3B3F58" weight="fill" />
+            <span>
+              <strong>Personal Growth:</strong> Discover how the concept of GodLight can illuminate your path,
+              fostering personal growth and emotional well-being.
+            </span>
+          </li>
+          <li>
+            <CheckCircle size={24} color="#3B3F58" weight="fill" />
+            <span>
+              <strong>Meaningful Dialogue:</strong> Engage in a deep, personal dialogue with a Beacon and
+              like-minded individuals who share your quest for enlightenment.
+            </span>
+          </li>
+          <li>
+            <CheckCircle size={24} color="#3B3F58" weight="fill" />
+            <span>
+              <strong>Universal Connection:</strong> Understand how GodLight transcends individual beliefs
+              and resonates with people of all backgrounds.
+            </span>
+          </li>
+        </ul>
+        <Link
+          href="#book"
+          className="flash-section__cta"
+        >
+          Start Your Conversation
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section className="book-section" id="book">
         <div className="book-section__container">
-          {/* Left: Book Image */}
           <div className="book-section__image" role="img" aria-label="GodLight Book cover">
             <Image
               src="/book-img.jpg"
               alt="GodLight Book Cover"
               width={300}
               height={400}
+              sizes="(max-width: 768px) 100vw, 300px"
               className="object-cover"
+              priority
             />
           </div>
-
-          {/* Right: Text Content */}
           <div className="book-section__content">
             <h2 className="book-section__title">Discover the GodLight Book</h2>
             <p className="book-section__description">
-              Dive into Dr. Bart Barthelemy’s groundbreaking work, GodLight, which explores 
-              the profound and transformative connection between God and Light — spiritually, 
-              scientifically, and personally. Rooted in a lifelong journey of faith, inquiry, and discovery, 
-              this book offers deep insights into the origins of the universe, the nature of existence, and the 
-              divine light within each of us. Through compelling research and spiritual reflection, 
-              GodLight reveals how experiencing God as Light can illuminate our purpose, deepen our 
-              understanding, and inspire a path toward universal love, harmony, and inner peace.
+              Dive into Dr. Bart Barthelemy’s groundbreaking work, GodLight, which explores the profound and transformative connection between God and Light — spiritually, scientifically, and personally. Rooted in a lifelong journey of faith, inquiry, and discovery, this book offers deep insights into the origins of the universe, the nature of existence, and the divine light within each of us. Through compelling research and spiritual reflection, GodLight reveals how experiencing God as Light can illuminate our purpose, deepen our understanding, and inspire a path toward universal love, harmony, and inner peace.
             </p>
             <Link
-              href="https://www.amazon.com/dp/your-book-link" // Replace with actual link
+              href="https://www.amazon.com/dp/your-book-link"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -172,42 +139,37 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       <section className="book-section">
         <div className="book-section__container">
-          {/* Right: Text Content */}
           <div className="book-section__content">
             <h2 className="book-section__title">GodLight E-Learning Course</h2>
             <p className="book-section__description">
               Explore the deep connections between Light, Science, and Spirituality for a Journey of Self-Discovery and Enlightenment.
             </p>
-            <h5 className="descripton__subheading">What you will learn:</h5>
-
+            <h3 className="book__subheading">What you will learn:</h3>
             <ul className="flash-section__list">
               <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
+                <CheckCircle size={24} color="#FA854F" weight="fill" aria-hidden="true" />
                 <span>That Light is the fundamental element of everything.</span>
               </li>
               <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
+                <CheckCircle size={24} color="#FA854F" weight="fill" aria-hidden="true" />
                 <span>How to integrate Light into your life and your world.</span>
               </li>
               <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
+                <CheckCircle size={24} color="#FA854F" weight="fill" aria-hidden="true" />
                 <span>How to see Possibilities as Opportunities.</span>
               </li>
               <li>
-                <CheckCircle size={28} color="#FA854F" weight="fill" />
+                <CheckCircle size={24} color="#FA854F" weight="fill" aria-hidden="true" />
                 <span>How Being The Light can change your life.</span>
               </li>
             </ul>
-
             <p>
               This online learning course explores the possibilities and opportunities arising from the intersections of science and spirituality.
             </p>
-            
             <Link
-              href="https://www.amazon.com/dp/your-book-link" // Replace with actual link
+              href="https://www.amazon.com/dp/your-book-link"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -215,44 +177,37 @@ export default function Page() {
               Enroll Now
             </Link>
           </div>
-
-          {/* Left: Book Image */}
           <div className="book-section__image" role="img" aria-label="GodLight E-Learning Course">
             <Image
               src="/udemy.jpg"
               alt="GodLight E-Learning Course Image"
               width={300}
               height={200}
+              sizes="(max-width: 768px) 100vw, 300px"
               className="object-cover"
             />
           </div>
         </div>
       </section>
-
       <section className="book-section">
         <div className="book-section__container">
-          {/* Left: Book Image */}
           <div className="book-section__image" role="img" aria-label="Interview on People of Distinction Radio">
             <Image
               src="https://img.youtube.com/vi/xtl2YLpJqjE/maxresdefault.jpg"
               alt="Interview on People of Distinction Radio Thumbnail"
               width={300}
               height={200}
+              sizes="(max-width: 768px) 100vw, 300px"
               className="object-cover"
             />
           </div>
-
-          {/* Right: Text Content */}
           <div className="book-section__content">
             <h2 className="book-section__title">Interview on People of Distinction Radio</h2>
             <p className="book-section__description">
-              In his exclusive interview, Dr. Bart Barthelemy discusses how his lifelong journey led him to explore the profound connection between God and Light, 
-              suggesting that Light is not merely a metaphor but a fundamental aspect of divine presence. 
-              Dr. Barthelemy emphasizes that understanding God as Light can illuminate our purpose, foster universal 
-              love, and bridge the gap between scientific inquiry and spiritual belief.
+              In his exclusive interview, Dr. Bart Barthelemy discusses how his lifelong journey led him to explore the profound connection between God and Light, suggesting that Light is not merely a metaphor but a fundamental aspect of divine presence. Dr. Barthelemy emphasizes that understanding God as Light can illuminate our purpose, foster universal love, and bridge the gap between scientific inquiry and spiritual belief.
             </p>
             <Link
-              href="https://www.youtube.com/watch?v=xtl2YLpJqjE" // Updated to actual YouTube link
+              href="https://www.youtube.com/watch?v=xtl2YLpJqjE"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -262,41 +217,39 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       <section className="article-download-section">
         <div className="article-download-section__container">
           <div className="article-download-section__header">
             <h2>Download Articles</h2>
           </div>
-
           <div className="article-download-section__search">
-            <MagnifyingGlass size={20} color="#555" />
+            <MagnifyingGlass size={20} color="#555" aria-hidden="true" />
             <input
               type="text"
               placeholder="Search article or author"
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
-                setVisibleCount(6); // Reset count when user searches
+                setVisibleCount(6);
               }}
+              aria-label="Search articles by title or author"
             />
           </div>
-
           <div className="article-download-section__cards">
             {visibleArticles.length > 0 ? (
               visibleArticles.map((article) => (
                 <div key={article.id} className="article-download-card">
                   <div className="article-download-card__content">
                     <h3 className="article-download-card__title">{article.title}</h3>
+                    <p className="article-download-card__author">By {article.author}</p>
                   </div>
-                  <p className="article-download-card__author">By {article.author}</p>
                   <Link
                     href={article.fileUrl}
                     download
                     className="article-download-card__btn"
                     aria-label={`Download ${article.title}`}
                   >
-                    Download <DownloadSimple size={18} weight="bold" />
+                    Download <DownloadSimple size={18} weight="bold" aria-hidden="true" />
                   </Link>
                 </div>
               ))
@@ -306,10 +259,13 @@ export default function Page() {
               </div>
             )}
           </div>
-
           {visibleCount < filteredArticles.length && visibleArticles.length > 0 && (
             <div className="article-download-section__loadmore">
-              <button onClick={handleLoadMore} className="loadmore-btn">
+              <button
+                onClick={handleLoadMore}
+                className="loadmore-btn"
+                aria-label="Load more articles"
+              >
                 Load More Articles
               </button>
             </div>
