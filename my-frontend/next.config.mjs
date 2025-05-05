@@ -10,8 +10,11 @@ const nextConfig = {
         hostname: 'img.youtube.com',
         pathname: '/vi/**',
       },
+      
     ],
   },
 };
+
+
 
 export default nextConfig;

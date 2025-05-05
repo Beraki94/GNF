@@ -2,7 +2,7 @@
 
 import React from "react";
 import BlogCard from "./BlogCard";
-import { blogPosts } from "../../app/data/blogData";
+import { blogPosts } from "@/app/data/blogData";
 
 export default function BlogList() {
   return (

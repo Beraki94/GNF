@@ -1,0 +1,139 @@
+.category-bar {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-4);
+  justify-content: center;
+}
+
+.category-button {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-logo-light);
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+  transition: var(--transition);
+}
+
+.category-button.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-3);
+}
+
+.blog-list-wrapper {
+  padding-block: var(--spacing-5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-button {
+    font-size: var(--font-size-xs);
+    padding: 0.4rem 0.8rem;
+  }
+
+  .blog-list-wrapper {
+    padding: var(--spacing-3) var(--spacing-2);
+  }
+}
+
+
+/* Blog Details */
+
+.blog-detail-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--font-body);
+}
+
+.blog-detail-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-detail-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-shade);
+  margin-bottom: 0.5rem;
+}
+
+.blog-detail-meta {
+  color: var(--grey-50);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail-author {
+  font-size: 1rem;
+  color: var(--grey-80);
+}
+
+.blog-detail-author p {
+  font-size: 0.875rem;
+  color: var(--grey-60);
+  margin: 0.25rem 0 0;
+}
+
+.blog-detail-media {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.blog-detail-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  max-height: 450px;
+}
+
+.blog-detail-video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.blog-detail-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.blog-detail-content {
+  font-size: 1.125rem;
+  color: var(--grey-90);
+  line-height: 1.8;
+}
+
+.blog-detail-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-detail-title {
+    font-size: 2rem;
+  }
+
+  .blog-detail-content {
+    font-size: 1rem;
+  }
+
+  .blog-detail-image {
+    max-height: 300px;
+  }
+}

@@ -1,15 +1,29 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { CaretRight } from "@phosphor-icons/react";
 import "./BlogCard.css";
 
+const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
+  const imageUrl = mainImage?.url || "/images/placeholder.jpg";
+  const isExternal = imageUrl.startsWith("http");
 
-const BlogCard = ({ title, description, slug, date, readTime }) => {
   return (
     <div className="blog-card">
       <div className="blog-card__image-placeholder">
-       <img src="/news.jpg" alt="news badge" className="blog__img"/>
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          className="blog__img"
+          sizes="(max-width: 768px) 100vw, 400px"
+          style={{ objectFit: "cover" }}
+          unoptimized={isExternal} // Prevent Next from optimizing YouTube thumbnails
+        />
+        {mainImage?.isVideo && (
+          <div className="blog-card__video-tag">🎥 Video</div>
+        )}
       </div>
 
       <div className="blog-card__details">
@@ -21,7 +35,7 @@ const BlogCard = ({ title, description, slug, date, readTime }) => {
 
         <p className="blog-card__description">{description}</p>
 
-        <Link href={`/blog/${slug}`} className="blog-card__read-more">
+        <Link href={`/news&stories/${slug}`} className="blog-card__read-more">
           Read More <CaretRight size={16} weight="bold" />
         </Link>
       </div>
