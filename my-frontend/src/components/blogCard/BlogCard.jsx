@@ -35,7 +35,7 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
 
         <p className="blog-card__description">{description}</p>
 
-        <Link href={`/news&stories/${slug}`} className="blog-card__read-more">
+        <Link href={`/news-stories/${slug}`} className="blog-card__read-more">
           Read More <CaretRight size={16} weight="bold" />
         </Link>
       </div>
