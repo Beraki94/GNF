@@ -11,7 +11,7 @@ const slides = [
     title: "Dreams Illuminated",
     subtitle: "GodLight Fuels Your Journey",
     buttonText: "Get Involved",
-    image: "/heroImg/hero1.jpg",
+    image: "/heroImg/new.hero.jpg",
     alt: "Children smiling in a community supported by GodLight Nigeria Foundation",
   },
   {
