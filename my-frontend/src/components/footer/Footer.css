@@ -36,10 +36,12 @@
   display: flex;
   align-items: center;
   margin-bottom: var(--spacing-2);
+  display: flex;
 }
 
 .footer__logo-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: var(--spacing-1);
   font-weight: bold;
@@ -53,6 +55,7 @@
   height: 64px;
   object-fit: contain;
 }
+
 
 .footer__description {
   font-size: 1rem;

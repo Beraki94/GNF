@@ -36,12 +36,13 @@ const Footer = () => {
                     width={64}
                     height={64}
                   />
-                  <span>GodLight Nigeria Foundation</span>
+                  <span className="footer__brand">GodLight Nigeria Foundation</span>
                 </Link>
               </div>
 
               <p className="footer__description">
-                GodLight Foundation is committed to transforming lives through faith, hope, and love.
+              Illuminating hearts, uniting communities. Guided by divine Light, we empower Nigeria’s youth to discover purpose and radiate love through spirituality
+               and science. Join us in shining God’s Light, fostering hope and transformation across the nation.
               </p>
 
               <div className="footer__socials">
@@ -54,7 +55,7 @@ const Footer = () => {
                   <InstagramLogo size={32} />
                 </Link>
                 <Link
-                  href="https://youtube.com/godlight"
+                  href="https://youtube.com/@godlightnigeriafoundation?si=_rvN2pXmMrJR9if1"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"

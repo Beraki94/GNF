@@ -22,8 +22,13 @@ const ScrollToTop = () => {
 
   return (
     visible && (
-      <button className="scroll-to-top" onClick={scrollToTop}>
-        <ArrowUp size={24} weight="bold" />
+      <button
+        className="scroll-to-top"
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
+        type="button"
+      >
+        <ArrowUp size={20} weight="bold" />
       </button>
     )
   );
