@@ -2,6 +2,7 @@
 import './globals.css';
 import { albertSans, merriweather, poppins } from './font';
 import ClientLayout from './clientLayout';
+import AppWrapper from '@/components/appWrapper/AppWrapper';
 
 
 export const metadata = {
@@ -14,9 +15,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <ClientLayout fonts={fonts}>
+      <AppWrapper>
+        <ClientLayout fonts={fonts}>
         {children}
-      </ClientLayout>
+        </ClientLayout>
+      </AppWrapper>
     </html>
   );
 }

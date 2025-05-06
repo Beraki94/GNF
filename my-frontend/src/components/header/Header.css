@@ -13,7 +13,7 @@
   z-index: 5000;
   border-radius: var(--radius-md);
   margin: var(--spacing-2);
-  padding: var(--spacing-1) var(--spacing-2);
+  padding: var(--spacing-1) var(--spacing-3);
   display: flex;
   justify-content: space-between;
 }
@@ -74,6 +74,24 @@
   color: var(--color-logo);
 }
 
+/* === Trigger Button === */
+.contact__us__btn {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-md);
+  border: none;
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.contact__us__btn:hover {
+  background-color: #ea7b48;
+  transform: translateY(-1px);
+}
 /* Smartphones (≤480px) */
 
 @media (max-width: 345px) {
@@ -121,6 +139,10 @@
     padding: var(--spacing-2);
     width: 100%;
   }
+  .contact__us__btn {
+    padding: var(--spacing-1) var(--spacing-2);
+    font-size: var(--font-size-sm);
+  }
 }
 
 /* Tablets (481px–768px) */
@@ -165,6 +187,9 @@
     width: 100%;
   }
 
+  .contact__us__btn{
+    font-size: var(--font-size-sm);
+  }
 }
 
 

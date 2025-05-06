@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./Hero.css";
+import { useModal } from "../appWrapper/AppWrapper";
 
 const slides = [
   {
@@ -15,7 +16,7 @@ const slides = [
     alt: "Children smiling in a community supported by GodLight Nigeria Foundation",
   },
   {
-    title: "Future Enlightend",
+    title: "Future Enlightened",
     subtitle: "Nigeria Thrives Through All",
     buttonText: "Connect GodLight",
     image: "/heroImg/just3.jpg",
@@ -31,6 +32,8 @@ const slides = [
 ];
 
 const Hero = () => {
+  const { openModal } = useModal();
+
   const [sliderRef] = useKeenSlider(
     {
       loop: true,
@@ -101,6 +104,7 @@ const Hero = () => {
                 type="button"
                 className="hero__btn"
                 aria-label={slide.buttonText}
+                onClick={openModal}
               >
                 {slide.buttonText}
               </button>
