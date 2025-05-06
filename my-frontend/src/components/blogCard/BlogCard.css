@@ -25,6 +25,18 @@
   gap: var(--spacing-3);
 }
 
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ========== BLOG CARD ========== */
 .blog-card {
@@ -150,9 +162,6 @@
   .blog-section {
     padding: 2rem 1rem;
   }
-  .blog-grid {
-    grid-template-columns: 1fr;
-  }
 
   .blog__title {
     font-size: 2rem;
@@ -166,3 +175,4 @@
     font-size: 1.75rem;
   }
 }
+
