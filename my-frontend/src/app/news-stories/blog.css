@@ -371,3 +371,22 @@
     font-size: 0.9rem;
   }
 }
+
+
+.blog-back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.blog-back-button:hover {
+  color: var(--primary-600);
+}
