@@ -11,7 +11,67 @@ export const blogPosts = [
       url: "/news.jpg", // used on card
       isVideo: false,
     },
-    content: `<p>From March 27–28, 2025, a remarkable event unfolded...</p>`,
+
+    content1: `<p>From March 27–28, 2025, a remarkable event unfolded at the ETF Auditorium of <strong>Chukwuemeka Odumegwu Ojukwu University</strong> in Anambra State, Nigeria—the <strong>GodLight International Conference Nigeria 2025</strong>. This conference, organized in collaboration with the <strong>Department of Religion and Human Relations</strong>, was a gathering of inquisitive minds dedicated to discussing pressing societal issues through the lens of faith, community, and personal growth.</p>
+
+              <h2>A Grateful Beginning</h2>
+              <p>
+                The seeds for this transformative gathering were sown during a previous meeting in Madrid, Spain, where 
+                <strong>Sr. Mary Emilia Aboekwe IHM PhD</strong>, the Ambassador of the GodLight Nigeria Foundation, met 
+                <strong>Dr. Bart Barthelemy</strong>, the visionary Founder and Executive Director of the GodLight Foundation, 
+                <strong>Karen Williams Barthelemy</strong>, the President and CEO, 
+                <strong>Carl Geartner</strong>, the Vice President and COO, 
+                <strong>Kelly Richey</strong>, and others. Their shared vision sparked the idea for an international conference that would unite individuals from diverse backgrounds to explore the intersections of spirituality and societal advancement.
+              </p>
+              <p>Notably, it is worthy of note that the event was made possible through the generosity of <strong>Dr. Bart Barthelemy</strong>, who served as the sole sponsor of the Conference.</p>
+
+              <h2>The Power of Community</h2>
+              <p>
+                As participants arrived at the conference, they were greeted with a vibrant atmosphere that encouraged dialogue and collaboration. The event featured a rich program of presentations, workshops, and discussions aimed at empowering individuals to take meaningful action in their communities. Notably, many attendees participated online, overcoming the challenges posed by the current socio-political environment.
+              </p>
+              <p>
+                Throughout the conference, excitement filled the air as attendees engaged with thought-provoking topics. Each participant received a certificate of participation, and generous provisions ensured that those who traveled from afar were well cared for, with meals and accommodations provided for many.
+              </p>
+
+              <h2>Harvesting Knowledge and Connecting Cultures</h2>
+              <p>
+                One of the conference’s key achievements was its inclusive approach, reaching out to secondary schools and university students alike. This broad outreach allowed for engaging discussions that bridged generational gaps and offered valuable perspectives on the challenges and opportunities facing today's youth.
+              </p>
+              <p>
+                A dedicated <strong>Local Organizing Committee</strong> sprang into action, ensuring all logistical elements ran smoothly. Despite some technical challenges, the spirit of collaboration and support prevailed. Attendees shared their insights and formed networks that would continue beyond the conference, fostering a sense of belonging and community.
+              </p>
+
+              <h2>A Vision for the Future</h2>
+              <p>
+                In the aftermath of the successful conference, plans began to take shape for producing a <strong>Book of Conference Proceedings</strong> and a <strong>GodLight Journal</strong> to document the insights shared. These publications aim to contribute to ongoing conversations in the academic and spiritual realms, reflecting the collaborative effort of participants from various fields.
+              </p>
+              <p>
+                Looking ahead, the GodLight Nigeria Foundation has recommended that the next conference originally planned for 2026 be postponed to 2027. This decision aims to allow adequate time for the registration and establishment of the GodLight Nigeria Foundation's office, as well as to facilitate post-conference initiatives such as the publication of proceedings. However, as we await another <strong>GodLight International Conference Nigeria 2027</strong>, the foundation will continue to implement valuable programs such as the following:
+              </p> 
+             `,
+
+    features: [
+      "Entrepreneurship and Economic Development",
+      "Education and Scholarship Awareness",
+      "Health Awareness and Wellness"
+    ],
+
+    content2: `<p>
+                These initiatives will be carried out prior to the 2027 conference in Nigeria, demonstrating the vibrant spirit of the GodLight Nigeria Foundation and her ongoing commitment to empowering communities and fostering development.
+              </p>
+
+              <h2>Conclusion: A Journey of Hope and Light</h2>
+              <p>
+                The <strong>GodLight International Conference Nigeria 2025</strong> was not just an event; it was a celebration of hope, knowledge, and collective purpose. The collaborative spirit of the participants showcased the potential of community-driven initiatives to foster positive change.
+              </p>
+              <p>
+                As <strong>Sr. Mary Emilia</strong> aptly concluded, despite the challenges faced, the dedication of everyone involved ensured the conference’s success and laid a solid foundation for future endeavors.
+              </p>
+              <p>
+                Together, as we move forward, we remain committed to being lights for one another and for our communities, continually seeking to uplift and empower those around us.
+              </p>
+             `,
+
     author: {
       name: "Sr. Mary Emilia Aboekwe IHM PhD",
       title: "Ambassador, GodLight Nigeria Foundation",
@@ -30,7 +90,7 @@ export const blogPosts = [
       isVideo: true,
       videoUrl: "https://www.youtube.com/embed/3ysY60f5waw", // used on blog details page
     },
-    content: `<p>This video highlights the mission of the GodLight Nigeria Foundation...</p>`,
+    content1: `<p>This video highlights the mission of the GodLight Nigeria Foundation...</p>`,
     author: {
       name: "Foundation Media Team",
       title: "",
