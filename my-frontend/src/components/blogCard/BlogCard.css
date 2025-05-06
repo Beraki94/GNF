@@ -103,6 +103,9 @@
   line-height: var(--line-height-sm);
   margin-bottom: var(--spacing-1);
 }
+.blog-card__title:hover {
+  color: var(--color-secondary);
+}
 
 .blog-card__description {
   font-size: var(--font-size-md);
@@ -175,4 +178,3 @@
     font-size: 1.75rem;
   }
 }
-

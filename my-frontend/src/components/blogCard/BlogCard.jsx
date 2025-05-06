@@ -10,6 +10,7 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
   const isExternal = imageUrl.startsWith("http");
 
   return (
+  <Link href={`/news-stories/${slug}`}>
     <div className="blog-card">
       <div className="blog-card__image-placeholder">
         <Image
@@ -30,8 +31,10 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
         <p className="blog-card__meta">
           {date} &bull; {readTime}
         </p>
-
+        <Link href={`/news-stories/${slug}`}>
         <h3 className="blog-card__title">{title}</h3>
+        </Link>
+        
 
         <p className="blog-card__description">{description}</p>
 
@@ -40,6 +43,7 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
         </Link>
       </div>
     </div>
+    </Link>
   );
 };
 
