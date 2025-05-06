@@ -52,7 +52,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <InstagramLogo size={32} />
+                  <InstagramLogo size={40} />
                 </Link>
                 <Link
                   href="https://youtube.com/@godlightnigeriafoundation?si=_rvN2pXmMrJR9if1"
@@ -60,15 +60,15 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   aria-label="YouTube"
                 >
-                  <YoutubeLogo size={32} />
+                  <YoutubeLogo size={40} />
                 </Link>
                 <Link
-                  href="https://facebook.com/godlight"
+                  href="https://www.facebook.com/groups/1178925947001919/?ref=share&mibextid=NSMWBT"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
                 >
-                  <FacebookLogo size={32} />
+                  <FacebookLogo size={40} />
                 </Link>
               </div>
             </div>

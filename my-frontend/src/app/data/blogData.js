@@ -80,7 +80,7 @@ export const blogPosts = [
   {
     id: 2,
     slug: "godlight-video-blog",
-    title: "Watch: A Special Message from GodLight Nigeria",
+    title: "Join us on YouTube to watch the inspiring GodLight International Conference: Nigeria",
     shortDescription: "An inspiring video message ahead of our 2027 goals.",
     category: "Videos",
     date: "April 27, 2025",
@@ -88,9 +88,18 @@ export const blogPosts = [
     mainImage: {
       url: "https://img.youtube.com/vi/3ysY60f5waw/maxresdefault.jpg",
       isVideo: true,
-      videoUrl: "https://www.youtube.com/embed/3ysY60f5waw", // used on blog details page
+      videoUrl: "https://www.youtube.com/embed/3ysY60f5waw",
     },
-    content1: `<p>This video highlights the mission of the GodLight Nigeria Foundation...</p>`,
+    content1: `
+      <h2>Relive the GodLight Conference: Illuminating Humanity & Science</h2>
+      <p>
+        Experience the transformative <strong>GodLight: Humanities and Science in the Contemporary Order</strong> conference hosted by the GodLight Nigeria Foundation. 
+        This inspiring video captures powerful discussions led by <strong>Rev. Sr. Mary Emilia Aboekwe</strong> and thought leaders, exploring themes like peacebuilding, 
+        sustainable development, artificial intelligence, cultural heritage, and more. 
+        Discover how the divine light of GodLight bridges faith, science, and humanity to shape a better future for Nigeria and beyond. 
+        <strong>Watch now and join our mission to ignite hope and wisdom!</strong>
+      </p>
+    `,
     author: {
       name: "Foundation Media Team",
       title: "",
