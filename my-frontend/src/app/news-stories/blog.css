@@ -27,6 +27,25 @@
   color: var(--color-white);
 }
 
+@media (max-width: 768px) {
+  .category-bar {
+    
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-4g);
+    
+  }
+  
+  .category-button {
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 400;
+    
+  }
+  
+}
+
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
