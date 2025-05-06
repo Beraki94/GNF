@@ -12,6 +12,7 @@
 
 .blog__title {
   font-size: 2.5rem;
+  font-weight: 500;
   text-align: center;
   color: #120806; /* Main brand color */
   margin-bottom: 3rem;
@@ -20,9 +21,10 @@
 /* Grid for blog cards */
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: var(--spacing-3);
 }
+
 
 /* ========== BLOG CARD ========== */
 .blog-card {
@@ -139,7 +141,7 @@
   }
 
   .blog__title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 }
 

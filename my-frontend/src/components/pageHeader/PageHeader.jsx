@@ -7,7 +7,9 @@ const PageHeader = ({ title, pageImage }) => (
     style={{ backgroundImage: `url(${pageImage})` }}
   >
     <div className="page-header__overlay" />
+    <div className="page-header__container">
     <h1 className="page-header__title">{title}</h1>
+    </div>
   </header>
 );
 

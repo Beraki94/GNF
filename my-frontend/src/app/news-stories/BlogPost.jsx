@@ -15,7 +15,7 @@ const BlogPost = () => {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   return (
-    <div className="blog-list-wrapper container">
+    <div className="blog-list-wrapper blog__container">
       <div className="category-bar">
         {categories.map((cat) => (
           <button

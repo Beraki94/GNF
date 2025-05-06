@@ -8,11 +8,19 @@ export default function BlogList() {
   return (
     <main className="blog-section">
       <div className="blog__list">
-        <h4 className="blog__title">Latest Blog Posts</h4>
+        <h4 className="blog__title">Latest News and Stories</h4>
         <div className="blog-grid">
-          {blogPosts.map((blog, index) => (
-            <BlogCard key={index} {...blog} />
-          ))}
+          {blogPosts.map((post) => (
+          <BlogCard
+            key={post.id}
+            title={post.title}
+            description={post.shortDescription}
+            slug={post.slug}
+            date={post.date}
+            readTime={post.readTime}
+            mainImage={post.mainImage}
+          />
+        ))}
         </div>
       </div>
     </main>

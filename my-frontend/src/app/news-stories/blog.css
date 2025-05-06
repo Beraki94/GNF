@@ -26,14 +26,21 @@
   color: var(--color-white);
 }
 
+.blog__container{
+
+}
+
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
   gap: var(--spacing-3);
 }
 
+
 .blog-list-wrapper {
   padding-block: var(--spacing-5);
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 /* Responsive */
