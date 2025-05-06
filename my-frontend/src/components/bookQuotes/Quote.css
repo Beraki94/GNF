@@ -1,5 +1,11 @@
 .quote__wrapper {
-  background-color: var(--color-secondary);
+  background: linear-gradient(
+  90deg,
+  var(--color-primary) 7%,
+  var(--color-secondary) 48%,
+  var(--color-cold-dark) 90%
+);
+
   padding: 4rem 0;
 }
 

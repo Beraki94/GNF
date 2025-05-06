@@ -15,7 +15,7 @@ const StorySection = () => {
             divers faiths and traditions. As <strong>Dr. Bathelemy writes</strong>,
             
             <blockquote>
-            If belivers see GodLight as the fundeamental element of everything in the universe,
+            If belivers see GodLight as the fundamental element of everything in the universe,
             then understanding, collaboration, mutality, respect, and universal love may be a more reasonable possiblity.
           </blockquote>
           </p>

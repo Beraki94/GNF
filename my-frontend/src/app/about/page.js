@@ -34,8 +34,8 @@ const teamNigeria = [
     image: "/ngTeamImg/father.jpg",
   },
   {
-    name: "Onyeka Cosmas Agubueze",
-    role: "Executive Secretary",
+    name: "Onyekachi Cosmas Agubueze",
+    role: "Executive Secretary/ICT Manager",
     image: "/ngTeamImg/onyeka.jpg",
   },
 ];

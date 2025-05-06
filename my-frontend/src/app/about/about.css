@@ -77,17 +77,24 @@
   color: var(--grey-05);
   text-align: justify;
 }
+.overview-section__highlight--purpose h3 {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  margin-bottom: var(--spacing-unit);
+  text-align: center;
+}
 
 .overview-section__highlight--vision {
   background-color: #e9e0de;
   text-align: justify;
 }
-
-.overview-section__highlight-box h3 {
+.overview-section__highlight--vision h3{
   font-size: clamp(1.25rem, 3vw, 1.5rem);
   margin-bottom: var(--spacing-unit);
   text-align: center;
+  color: var(--color-primary);
+  font-style: bold;
 }
+
 
 .gnf-section {
   padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);

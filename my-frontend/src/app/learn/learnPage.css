@@ -119,7 +119,7 @@
 
   .book-section {
     padding: 64px 16px;
-    background-color: #C7CADC;
+    background-color: var(--color-cold-dark-light);
     text-align: justify;
   }
   
