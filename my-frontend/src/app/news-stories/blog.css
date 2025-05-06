@@ -28,7 +28,6 @@
 
 @media (max-width: 768px) {
   .category-bar {
-    
     gap: var(--spacing-2);
     flex-wrap: wrap;
     margin-bottom: var(--spacing-4);
@@ -89,14 +88,23 @@
   }
 }
 
-
 /* Blog Details */
 
+.blog-detail__page{
+  background-color: var(--grey-10);
+  padding: 8rem 2rem;
+
+
+}
+
 .blog-detail-wrapper {
+  border-radius: var(--radius-lg);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  font-family: var(--font-body);
+  padding: 2rem;
+  background-color: var(--grey-05);
+
 }
 
 .blog-detail-header {

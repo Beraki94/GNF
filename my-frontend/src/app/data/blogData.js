@@ -28,7 +28,7 @@ export const blogPosts = [
     mainImage: {
       url: "https://img.youtube.com/vi/3ysY60f5waw/maxresdefault.jpg",
       isVideo: true,
-      videoUrl: "https://youtu.be/3ysY60f5waw?si=FMfLfVhCcy9Q-PDO", // used on blog details page
+      videoUrl: "https://www.youtube.com/embed/3ysY60f5waw", // used on blog details page
     },
     content: `<p>This video highlights the mission of the GodLight Nigeria Foundation...</p>`,
     author: {

@@ -43,10 +43,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-1);
   font-weight: bold;
   color: var(--color-logo);
-  font-size: 1.25rem;
+  font-size: 1.20rem;
   text-decoration: none;
 }
 
