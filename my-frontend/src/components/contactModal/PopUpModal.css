@@ -132,3 +132,21 @@ textarea {
     font-size: var(--font-size-sm);
   }
 }
+
+input.success, textarea.success {
+  border-color: green;
+}
+
+input.error, textarea.error {
+  border-color: red;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
