@@ -7,9 +7,7 @@ import PageHeader from "@/components/pageHeader/PageHeader";
 import { CheckCircle, DownloadSimple, MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
 import "./learnPage.css";
 
-const articles = [
-""
-];
+const articles = [ ];
 
 export default function LearnPage() {
   const [searchQuery, setSearchQuery] = useState("");
