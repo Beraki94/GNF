@@ -8,18 +8,7 @@ import { CheckCircle, DownloadSimple, MagnifyingGlass } from "@phosphor-icons/re
 import "./learnPage.css";
 
 const articles = [
-  {
-    id: 1,
-    title: "The Intersection of Divine Inspiration, Human Ingenuity, and Machine Learning",
-    author: "Opene Anayo Daniel",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
-  {
-    id: 2,
-    title: "GodLight, Humanity, and Artificial Intelligence: Exploring the Intersection",
-    author: "Sunday Osita",
-    fileUrl: "/downloads/godlight-ai.pdf",
-  },
+""
 ];
 
 export default function LearnPage() {
