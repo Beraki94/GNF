@@ -148,7 +148,7 @@ export default function Page() {
               aria-label="Volunteers and beneficiaries at a GodLight Nigeria outreach"
             >
               <Image
-                src="/foundation.gl.avif"
+                src="/foundation.jpg"
                 alt="Volunteers and beneficiaries at a GodLight Nigeria outreach"
                 width={500}
                 height={300}
