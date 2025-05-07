@@ -10,9 +10,10 @@ const categories = ["All Post", "Godlight", "Events", "Videos"];
 const BlogPost = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Post");
 
-  const filteredPosts = selectedCategory === "All Post"
-    ? blogPosts
-    : blogPosts.filter(post => post.category === selectedCategory);
+  const filteredPosts =
+    selectedCategory === "All Post"
+      ? blogPosts
+      : blogPosts.filter((post) => post.category === selectedCategory);
 
   return (
     <div className="blog-list-wrapper blog__container">
@@ -28,19 +29,26 @@ const BlogPost = () => {
         ))}
       </div>
 
-      <div className="blog-grid">
-        {filteredPosts.map((post) => (
-          <BlogCard
-            key={post.id}
-            title={post.title}
-            description={post.shortDescription}
-            slug={post.slug}
-            date={post.date}
-            readTime={post.readTime}
-            mainImage={post.mainImage}
-          />
-        ))}
-      </div>
+      {filteredPosts.length === 0 ? (
+        <div className="empty-state">
+          <h2>No news or stories found</h2>
+          <p>Check back soon. We’re working on something inspiring.</p>
+        </div>
+      ) : (
+        <div className="blog-grid">
+          {filteredPosts.map((post) => (
+            <BlogCard
+              key={post.id}
+              title={post.title}
+              description={post.shortDescription}
+              slug={post.slug}
+              date={post.date}
+              readTime={post.readTime}
+              mainImage={post.mainImage}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

@@ -73,7 +73,7 @@
 .blog-list-wrapper {
   padding-block: var(--spacing-5);
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
 }
 
 /* Responsive */
@@ -389,4 +389,22 @@
 
 .blog-back-button:hover {
   color: var(--primary-600);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--color-shade);
+  margin-top: 2rem;
+}
+
+.empty-state h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-shade);
+}
+
+.empty-state p {
+  font-size: 1rem;
+  color: var(--color-shade);
 }
