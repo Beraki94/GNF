@@ -23,18 +23,18 @@ export default function ClientLayout({ children, fonts }) {
 
   if (loading) {
     return (
-      <body className={fonts}>
+      <>
         <Loader />
-      </body>
+      </>
     );
   }
 
   return (
-    <body className={fonts}>
+    <>
       <Header />
       {children}
       <Footer />
       <ScrollToTop />
-    </body>
+    </>
   );
 }

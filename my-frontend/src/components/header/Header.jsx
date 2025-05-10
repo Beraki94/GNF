@@ -28,7 +28,7 @@ export default function Header() {
     <header className="header__wrapper">
       <Link href="/" className="header__logo" aria-label="Go to homepage">
         <Image
-          src="https://static.wixstatic.com/media/648eff_2a48666658494651927c956a82897723~mv2.png/v1/fill/w_759,h_353,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/648eff_2a48666658494651927c956a82897723~mv2.png"
+          src="/godlight.logo.avif"
           alt="GodLight Nigeria Foundation Logo"
           width={64}
           height={64}
@@ -36,7 +36,7 @@ export default function Header() {
           className="header__logo-image"
         />
         <span className="header__brand">
-          GodLight <span className="brand__mobile">Nigeria Foundation</span>
+          GodLight <span className="brand__mobile">Empowerment Foundation</span>
         </span>
       </Link>
 

@@ -2,15 +2,86 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { InstagramLogo, YoutubeLogo, FacebookLogo } from "@phosphor-icons/react";
+import {
+  InstagramLogo,
+  YoutubeLogo,
+  FacebookLogo
+} from "@phosphor-icons/react";
 import "./Footer.css";
 import SectionHeader from "../sectionHeader/SectionHeader";
+import { useState } from "react";
 
 const Footer = () => {
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: ""
+  });
+
+  const [status, setStatus] = useState(null); // success | error
+  const [touched, setTouched] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleBlur = (e) => {
+    const { name } = e.target;
+    setTouched((prev) => ({ ...prev, [name]: true }));
+  };
+
+  const validate = () => {
+    const errors = {};
+    if (formData.firstName.length < 2) errors.firstName = "Too short";
+    if (formData.lastName.length < 2) errors.lastName = "Too short";
+    if (!/\S+@\S+\.\S+/.test(formData.email)) errors.email = "Invalid email";
+    if (formData.message.length < 10) errors.message = "Message too short";
+    return errors;
+  };
+
+  const errors = validate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Placeholder: Add form submission logic (e.g., API call)
-    console.log("Form submitted");
+
+    if (Object.keys(errors).length > 0) {
+      setTouched({
+        firstName: true,
+        lastName: true,
+        email: true,
+        message: true
+      });
+      return;
+    }
+
+    try {
+      const response = await fetch("https://formspree.io/f/movdwdwj", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        setStatus("success");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: ""
+        });
+        setTouched({});
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    }
   };
 
   return (
@@ -31,18 +102,20 @@ const Footer = () => {
               <div className="footer__logo">
                 <Link href="/" className="footer__logo-link">
                   <Image
-                    src="https://static.wixstatic.com/media/648eff_2a48666658494651927c956a82897723~mv2.png/v1/fill/w_759,h_353,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/648eff_2a48666658494651927c956a82897723~mv2.png"
+                    src="/godlight.logo.avif"
                     alt="GodLight Nigeria Foundation Logo"
                     width={64}
                     height={64}
                   />
-                  <span className="footer__brand">GodLight Nigeria Foundation</span>
+                  <span className="footer__brand">
+                    GodLight Empowerment Foundation
+                  </span>
                 </Link>
               </div>
 
               <p className="footer__description">
-              Illuminating hearts, uniting communities. Guided by divine Light, we empower Nigeria’s youth to discover purpose and radiate love through spirituality
-               and science. Join us in shining God’s Light, fostering hope and transformation across the nation.
+                Illuminating hearts, uniting communities. Guided by divine Light, we empower Nigeria’s youth to discover purpose and radiate love through spirituality
+                and science. Join us in shining God’s Light, fostering hope and transformation across the nation.
               </p>
 
               <div className="footer__socials">
@@ -74,43 +147,85 @@ const Footer = () => {
             </div>
 
             {/* Right Section - Contact Form */}
-            <form className="footer__form" onSubmit={handleSubmit}>
+            <form className="footer__form" onSubmit={handleSubmit} noValidate>
               <h3 className="form__title">Contact Us</h3>
               <div className="footer__form-group">
                 <input
                   type="text"
+                  name="firstName"
                   placeholder="First Name"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={
+                    touched.firstName && errors.firstName
+                      ? "error"
+                      : "success"
+                  }
                   required
                   aria-label="First Name"
                 />
                 <input
                   type="text"
+                  name="lastName"
                   placeholder="Last Name"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  className={
+                    touched.lastName && errors.lastName ? "error" : "success"
+                  }
                   required
                   aria-label="Last Name"
                 />
               </div>
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
+                value={formData.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className={touched.email && errors.email ? "error" : "success"}
                 required
                 aria-label="Email Address"
               />
               <textarea
+                name="message"
                 placeholder="Your Message"
                 rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className={
+                  touched.message && errors.message ? "error" : "success"
+                }
                 required
                 aria-label="Your Message"
               ></textarea>
               <button type="submit" aria-label="Submit Contact Form">
                 Submit
               </button>
+
+              {status === "success" && (
+                <p className="success-message">
+                  Thank you! Your message was sent 🎉
+                </p>
+              )}
+              {status === "error" && (
+                <p className="error-message">
+                  Oops! Something went wrong 😞
+                </p>
+              )}
             </form>
           </div>
 
           {/* Bottom Row */}
           <div className="footer__bottom">
-            <p>© {new Date().getFullYear()} GodLight Foundation. All rights reserved.</p>
+            <p>
+              © {new Date().getFullYear()} GodLight Foundation. All rights
+              reserved.
+            </p>
             <Link href="/privacy">Privacy Policy</Link>
           </div>
         </div>

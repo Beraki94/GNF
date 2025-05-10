@@ -116,7 +116,7 @@ export default function LearnPage() {
               Dive into Dr. Bart Barthelemy’s groundbreaking work, GodLight, which explores the profound and transformative connection between God and Light — spiritually, scientifically, and personally. Rooted in a lifelong journey of faith, inquiry, and discovery, this book offers deep insights into the origins of the universe, the nature of existence, and the divine light within each of us. Through compelling research and spiritual reflection, GodLight reveals how experiencing God as Light can illuminate our purpose, deepen our understanding, and inspire a path toward universal love, harmony, and inner peace.
             </p>
             <Link
-              href="https://www.amazon.com/dp/your-book-link"
+              href="https://www.godlightsite.com"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -156,7 +156,7 @@ export default function LearnPage() {
               This online learning course explores the possibilities and opportunities arising from the intersections of science and spirituality.
             </p>
             <Link
-              href="https://www.amazon.com/dp/your-book-link"
+              href="https://www.godlightsite.com"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -194,7 +194,7 @@ export default function LearnPage() {
               In his exclusive interview, Dr. Bart Barthelemy discusses how his lifelong journey led him to explore the profound connection between God and Light, suggesting that Light is not merely a metaphor but a fundamental aspect of divine presence. Dr. Barthelemy emphasizes that understanding God as Light can illuminate our purpose, foster universal love, and bridge the gap between scientific inquiry and spiritual belief.
             </p>
             <Link
-              href="https://www.youtube.com/watch?v=xtl2YLpJqjE"
+              href="https://www.godlightsite.com"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"

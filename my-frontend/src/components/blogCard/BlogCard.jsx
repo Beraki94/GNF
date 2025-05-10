@@ -10,9 +10,8 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
   const isExternal = imageUrl.startsWith("http");
 
   return (
-  <Link href={`/news-stories/${slug}`}>
     <div className="blog-card">
-      <div className="blog-card__image-placeholder">
+      <Link href={`/news-stories/${slug}`} className="blog-card__image-placeholder">
         <Image
           src={imageUrl}
           alt={title}
@@ -20,21 +19,21 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
           className="blog__img"
           sizes="(max-width: 768px) 100vw, 400px"
           style={{ objectFit: "cover" }}
-          unoptimized={isExternal} // Prevent Next from optimizing YouTube thumbnails
+          unoptimized={isExternal}
         />
         {mainImage?.isVideo && (
           <div className="blog-card__video-tag">🎥 Video</div>
         )}
-      </div>
+      </Link>
 
       <div className="blog-card__details">
         <p className="blog-card__meta">
           {date} &bull; {readTime}
         </p>
+
         <Link href={`/news-stories/${slug}`}>
-        <h3 className="blog-card__title">{title}</h3>
+          <h3 className="blog-card__title">{title}</h3>
         </Link>
-        
 
         <p className="blog-card__description">{description}</p>
 
@@ -43,7 +42,6 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
         </Link>
       </div>
     </div>
-    </Link>
   );
 };
 

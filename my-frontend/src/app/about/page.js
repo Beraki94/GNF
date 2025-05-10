@@ -29,14 +29,14 @@ const teamNigeria = [
     image: "/ngTeamImg/sister.jpg",
   },
   {
-    name: "Rev. Fr. Barrister Joe Ben Onyia",
-    role: "Legal Adviser",
-    image: "/ngTeamImg/father.jpg",
-  },
-  {
     name: "Onyekachi Cosmas Agubueze",
     role: "Executive Secretary/ICT Manager",
     image: "/ngTeamImg/onyeka.jpg",
+  },
+  {
+    name: "Rev. Fr. Barrister Joe Ben Onyia",
+    role: "Legal Adviser",
+    image: "/ngTeamImg/father.jpg",
   },
 ];
 
@@ -47,9 +47,9 @@ export default function Page() {
       <section className="overview-section">
         <div className="overview-section__main">
           <div className="overview-section__text">
-            <h2>GodLight Nigeria Foundation</h2>
+            <h2>GodLight Empowerment Foundation</h2>
             <p>
-              <strong>GodLight Nigeria Foundation</strong> is a nonprofit organization and the official African
+              <strong>GodLight Empowerment Foundation</strong> is a nonprofit organization and the official African
               extension of the <strong>GodLight Foundation</strong>, founded by <strong>Dr. Bart Barthelemy</strong>. Rooted in the
               core principles of spiritual awakening and personal transformation, the Nigerian foundation
               is committed to guiding individuals through a deeper exploration of their faith, purpose, and
@@ -62,7 +62,7 @@ export default function Page() {
               offering a safe space for healing, learning, and spiritual growth.
             </p>
             <p>
-              GodLight Nigeria embraces <strong>Dr. Barthelemy’s</strong> holistic understanding of Light—as external divine presence, 
+              GodLight Empowerment embraces <strong>Dr. Barthelemy’s</strong> holistic understanding of Light—as external divine presence, 
               spiritual illumination, and personal inner radiance—encouraging individuals to embrace their own spiritual 
               path and share that Light with others. At its core, the foundation nurtures love, compassion, and unity across communities in Nigeria and beyond.
             </p>
