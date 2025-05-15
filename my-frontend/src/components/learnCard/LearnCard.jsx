@@ -24,6 +24,12 @@ const LearnCard = ({ title, description, imageUrl, link }) => {
       <div className="learn-card__content">
         <h3>{title}</h3>
         <p>{description}</p>
+        <Link  
+          href={"https://www.godlightsite.com/"}
+          target="_blank"
+        >
+          <p className="godlightsite">www.godlightsite.com</p>
+        </Link>
         {isExternal ? (
           <Link
             href={link}

@@ -64,6 +64,7 @@
   min-width: 300px;
   position: relative;
   z-index: 2;
+  text-align: justify;
 }
 
 
@@ -80,7 +81,11 @@
   margin-bottom: 1.8rem;
 }
 
-.learn-card__content a {
+.learn-card__content .godlightsite{
+  color: var(--color-primary);
+}
+
+.learn-card__content .learn-card__link {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   background-color: var(--color-cold-dark);
@@ -92,7 +97,7 @@
   width: fit-content;
 }
 
-.learn-card__content a:hover {
+.learn-card__content .learn-card__link:hover {
   background-color: #12375a;
 }
 

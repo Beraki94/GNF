@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import PageHeader from "@/components/pageHeader/PageHeader";
+import Link from "next/link";
 import "./about.css";
 
 const founders = [
@@ -25,7 +26,7 @@ const founders = [
 const teamNigeria = [
   {
     name: "Sr. Mary Emilia Aboekwe IHM PhD",
-    role: "Ambassador GodLight Nigeria Foundation",
+    role: "Ambassador GodLight Empowerment Foundation",
     image: "/ngTeamImg/sister.jpg",
   },
   {
@@ -51,7 +52,7 @@ export default function Page() {
             <p>
               <strong>GodLight Empowerment Foundation</strong> is a nonprofit organization and the official African
               extension of the <strong>GodLight Foundation</strong>, founded by <strong>Dr. Bart Barthelemy</strong>. Rooted in the
-              core principles of spiritual awakening and personal transformation, the Nigerian foundation
+              core principles of spiritual awakening and personal transformation, the Empowerment foundation
               is committed to guiding individuals through a deeper exploration of their faith, purpose, and
               connection to God through the concept of Light.
             </p>
@@ -140,6 +141,13 @@ export default function Page() {
               By promoting empathy, shared values, and spiritual empowerment, the <strong>GodLight Foundation</strong> fosters a global community 
               rooted in harmony, mutual respect, and the shared human pursuit of divine understanding.
             </p>
+          <Link
+              target="_blank"
+              href="https://www.godlightsite.com/learn"
+              className="flash-section__cta"
+            >
+              www.godlightsite.com
+        </Link>
           </div>
          
             <div

@@ -74,16 +74,16 @@ export const blogPosts = [
 
     author: {
       name: "Sr. Mary Emilia Aboekwe IHM PhD",
-      title: "Ambassador, GodLight Nigeria Foundation",
+      title: "Ambassador, GodLight Empowerment Foundation",
     },
   },
   {
     id: 2,
-    slug: "godlight-video-blog",
-    title: "Join us on YouTube to watch the inspiring GodLight International Conference: Nigeria",
+    slug: "International-Conference-Nigeria-Part-1",
+    title: "Join us on YouTube to watch the inspiring GodLight International Conference: Nigeria Part 1",
     shortDescription: "An inspiring video message ahead of our 2027 goals.",
     category: "Videos",
-    date: "April 27, 2025",
+    date: "May 7, 2025",
     readTime: "2 min read",
     mainImage: {
       url: "https://img.youtube.com/vi/3ysY60f5waw/maxresdefault.jpg",
@@ -91,7 +91,7 @@ export const blogPosts = [
       videoUrl: "https://www.youtube.com/embed/3ysY60f5waw",
     },
     content1: `
-      <h2>Relive the GodLight Conference: Illuminating Humanity & Science</h2>
+      <h2>Relive the GodLight Conference: Illuminating Humanity & Science Day 1</h2>
       <p>
         Experience the transformative <strong>GodLight: Humanities and Science in the Contemporary Order</strong> conference hosted by the GodLight Nigeria Foundation. 
         This inspiring video captures powerful discussions led by <strong>Rev. Sr. Mary Emilia Aboekwe</strong> and thought leaders, exploring themes like peacebuilding, 
@@ -101,7 +101,88 @@ export const blogPosts = [
       </p>
     `,
     author: {
-      name: "Foundation Media Team",
+      name: "Empowerment Media Team",
+      title: "",
+    },
+  },
+  {
+    id: 3,
+    slug: "International-Conference-Nigeria-Day-1-Part-2",
+    title: "Inspiring GodLight International Conference: Nigeria Day 1 Part 2",
+    shortDescription: "An inspiring video message ahead of our 2027 goals.",
+    category: "Videos",
+    date: "May 10, 2025",
+    readTime: "2 min read",
+    mainImage: {
+        url: "https://img.youtube.com/vi/5BUkdzlwD5c/maxresdefault.jpg", // YouTube thumbnail
+        isVideo: true,
+        videoUrl: "https://www.youtube.com/embed/5BUkdzlwD5c",
+    },
+
+    content1: `
+      <h2>Relive the GodLight Conference: Illuminating Humanity & Science Day 1 Part 2</h2>
+      <p>
+        Experience the transformative <strong>GodLight: Humanities and Science in the Contemporary Order</strong> conference hosted by the GodLight Nigeria Foundation. 
+        This inspiring video captures powerful discussions led by <strong>Rev. Sr. Mary Emilia Aboekwe</strong> and thought leaders, exploring themes like peacebuilding, 
+        sustainable development, artificial intelligence, cultural heritage, and more. 
+        Discover how the divine light of GodLight bridges faith, science, and humanity to shape a better future for Nigeria and beyond. 
+        <strong>Watch now and join our mission to ignite hope and wisdom!</strong>
+      </p>
+    `,
+    author: {
+      name: "Empowerment Media Team",
+      title: "",
+    },
+  },
+  {
+    id: 4,
+    slug: "parallel-session-and-workshop-Day-2-Part-1",
+    title: "Conference 2025 parallel session and workshop Day 2 Part 1",
+    shortDescription: "parallel session and workshop.",
+    category: "Videos",
+    date: "May 10, 2025",
+    readTime: "2 min read",
+    mainImage: {
+      url: "https://img.youtube.com/vi/wkjwjZuBosA/maxresdefault.jpg",
+      isVideo: true,
+      videoUrl: "https://www.youtube.com/embed/wkjwjZuBosA",
+    },
+
+    content1: `
+      <h2>GodLight international conference 2025 parallel session and workshop Day 2 Part 1</h2>
+      <p>
+        A focused series of parallel sessions and hands-on workshops exploring innovative approaches, community
+         impact strategies, and collaborative solutions to key challenges in development and humanitarian work.
+      </p>
+    `,
+    author: {
+      name: "Empowerment Media Team",
+      title: "",
+    },
+  },
+  {
+    id: 5,
+    slug: "parallel-session-and-workshop-Day-2-Part-2",
+    title: "Conference 2025 parallel session and workshop Day 2 Part 2",
+    shortDescription: "parallel session and workshop.",
+    category: "Videos",
+    date: "May 12, 2025",
+    readTime: "2 min read",
+    mainImage: {
+      url: "https://img.youtube.com/vi/kSmD8yRgY4c/maxresdefault.jpg",
+      isVideo: true,
+      videoUrl: "https://www.youtube.com/embed/kSmD8yRgY4c",
+    },
+
+    content1: `
+      <h2>GodLight international conference 2025 parallel session and workshop Day 2 Part 2</h2>
+      <p>
+        A focused series of parallel sessions and hands-on workshops exploring innovative approaches, community
+         impact strategies, and collaborative solutions to key challenges in development and humanitarian work.
+      </p>
+    `,
+    author: {
+      name: "Empowerment Media Team",
       title: "",
     },
   },

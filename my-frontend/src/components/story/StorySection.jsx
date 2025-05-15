@@ -15,7 +15,7 @@ const StorySection = () => {
           <h2 className="small">A journey of Light and Discovery</h2>
           <p>
             By integrating scientific inquiry with spiritual wisdom,{" "}
-            <strong>GodLight Nigeria Foundation</strong> offers a unique path to
+            <strong>GodLight Empowerment Foundation</strong> offers a unique path to
             enlightenment that honors diverse faiths and traditions. As{" "}
             <strong>Dr. Bathelemy writes</strong>:
           </p>

@@ -7,7 +7,14 @@ import PageHeader from "@/components/pageHeader/PageHeader";
 import { CheckCircle, DownloadSimple, MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
 import "./learnPage.css";
 
-const articles = [ ];
+const articles = [
+    {
+    id: 1,
+    title: "GodLight International Conference 2025 Brochure Articles",
+    author: "The Empowerment Team",
+    fileUrl: "/article/conference2025articles.pdf", // Place your PDF in public/pdfs/
+  },
+ ];
 
 export default function LearnPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -87,11 +94,13 @@ export default function LearnPage() {
           </li>
         </ul>
         <Link
-          href="#book"
+          target="_blank"
+          href="https://www.godlightsite.com/learn"
           className="flash-section__cta"
         >
-          Start Your Conversation
+          www.godlightsite.com
         </Link>
+        
       </div>
     </div>
   </div>
@@ -116,7 +125,7 @@ export default function LearnPage() {
               Dive into Dr. Bart Barthelemy’s groundbreaking work, GodLight, which explores the profound and transformative connection between God and Light — spiritually, scientifically, and personally. Rooted in a lifelong journey of faith, inquiry, and discovery, this book offers deep insights into the origins of the universe, the nature of existence, and the divine light within each of us. Through compelling research and spiritual reflection, GodLight reveals how experiencing God as Light can illuminate our purpose, deepen our understanding, and inspire a path toward universal love, harmony, and inner peace.
             </p>
             <Link
-              href="https://www.godlightsite.com"
+              href="https://www.godlightsite.com/learn"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -156,7 +165,7 @@ export default function LearnPage() {
               This online learning course explores the possibilities and opportunities arising from the intersections of science and spirituality.
             </p>
             <Link
-              href="https://www.godlightsite.com"
+              href="https://www.godlightsite.com/learn"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"
@@ -194,7 +203,7 @@ export default function LearnPage() {
               In his exclusive interview, Dr. Bart Barthelemy discusses how his lifelong journey led him to explore the profound connection between God and Light, suggesting that Light is not merely a metaphor but a fundamental aspect of divine presence. Dr. Barthelemy emphasizes that understanding God as Light can illuminate our purpose, foster universal love, and bridge the gap between scientific inquiry and spiritual belief.
             </p>
             <Link
-              href="https://www.godlightsite.com"
+              href="https://www.godlightsite.com/learn"
               target="_blank"
               rel="noopener noreferrer"
               className="book-section__cta"

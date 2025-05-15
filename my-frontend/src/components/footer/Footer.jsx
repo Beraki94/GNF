@@ -103,7 +103,7 @@ const Footer = () => {
                 <Link href="/" className="footer__logo-link">
                   <Image
                     src="/godlight.logo.avif"
-                    alt="GodLight Nigeria Foundation Logo"
+                    alt="GodLight Empowerment Foundation Logo"
                     width={64}
                     height={64}
                   />
@@ -223,7 +223,7 @@ const Footer = () => {
           {/* Bottom Row */}
           <div className="footer__bottom">
             <p>
-              © {new Date().getFullYear()} GodLight Foundation. All rights
+              © {new Date().getFullYear()} GodLight Empowerment Foundation. All rights
               reserved.
             </p>
             <Link href="/privacy">Privacy Policy</Link>
