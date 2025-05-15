@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+.header__logo-image{
+  height: 32px;
+  width: 64px;
+}
+
 .header__brand {
   font-family: var(--font-poppins), sans-serif;
   font-size: var(--font-size-md);
