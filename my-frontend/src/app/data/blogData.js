@@ -186,4 +186,61 @@ export const blogPosts = [
       title: "",
     },
   },
+  
+  {
+  id: 6,
+  slug: "godlight-empowerment-foundation-launch",
+  title: "GODLIGHT EMPOWERMENT FOUNDATION: A New Beginning for Ndubuisi Odoh",
+  shortDescription: "Celebrating the launch of the GodLight Empowerment Foundation and the empowerment of Ndubuisi Odoh.",
+  category: "Godlight",
+  date: "June 5, 2025",
+  readTime: "3 min read",
+  mainImage: {
+    url: "/empowermentMay/emp3.jpg",
+    isVideo: false,
+  },
+
+ content1: `
+    <p>Today, June 5, 2025, we celebrate a momentous milestone—the official launch of the <strong>GodLight Empowerment Foundation</strong>, an inspiring offshoot of the esteemed <strong>GodLight Foundation</strong>. This new initiative is made possible through the generous benevolence and unwavering support of <strong>Dr. Bart Barthelemy</strong>, <strong>Karen Williams Barthelemy</strong>, and <strong>Carl Gaetner</strong>. Their dedication, compassion, and funding have been instrumental in bringing this powerful vision to reality.</p>
+
+    <p>We are profoundly grateful for their selfless efforts, which continue to inspire meaningful change and uplift lives. The <strong>GodLight Empowerment Foundation</strong> embodies the core values of compassion, resilience, and empowerment that the parent foundation, <strong>GodLight Foundation</strong>, stands for. It reflects our collective conviction in uplifting the human spirit and creating opportunities for those in need.</p>
+
+    <p>Today, we have the distinct honour of empowering <strong>Mr. Ndubuisi Odoh</strong>, a beans and plantain vendor from a very impoverished background. Having lost his father early in life and unable to attend school due to financial hardships, Ndubuisi exemplifies resilience and hope. Despite facing health challenges, he has maintained unwavering determination and a positive outlook. Through this empowerment, he now has the opportunity to transform his destiny and make meaningful contributions to society.</p>
+
+    <p>This act of empowerment goes beyond mere financial assistance; it ignites hope, affirms dignity, and reminds us all that everyone deserves the chance to succeed.</p>
+
+    <p>Let us celebrate this moment as a testament to what collective compassion and effort can achieve. Today’s event mirrors the transformative power of benevolence, fueled by the support of <strong>Dr. Bart Barthelemy</strong>, <strong>Karen Williams Barthelemy</strong>, and the dedicated <strong>GodLight Team</strong> in the USA.</p>
+
+    <p>Together, we are working toward a future where no one is left behind and every opportunity is accessible to all.</p>
+  `,
+
+  // ✅ NEW SECTION HERE
+  extraImages: [
+    {
+      url: "/empowermentMay/emp1.jpg",
+      alt: "Ndubuisi Odoh receiving empowerment support"
+    },
+    {
+      url: "/empowermentMay/emp2.jpg",
+      alt: "Celebration at GodLight Empowerment launch"
+    },
+    {
+      url: "/empowermentMay/emp4.jpg",
+      alt: "Sr. Mary Emilia with Ndubuisi and community members"
+    },
+  ],
+
+  content2: `
+    <p><strong>Thank you for your presence, support, and faith in this noble cause.</strong></p>
+    <p><strong>Sr. Mary Emilia Aboekwe, PhD</strong><br/>GodLight Ambassador</p>
+  `,
+
+  author: {
+    name: "Sr. Mary Emilia Aboekwe, PhD",
+    title: "GodLight Ambassador",
+  },
+},
+
+  
+
 ];

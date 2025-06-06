@@ -10,10 +10,11 @@ const categories = ["All Post", "Godlight", "Events", "Videos"];
 const BlogPost = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Post");
 
-  const filteredPosts =
-    selectedCategory === "All Post"
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === selectedCategory);
+const filteredPosts = (selectedCategory === "All Post"
+  ? blogPosts
+  : blogPosts.filter((post) => post.category === selectedCategory)
+).sort((a, b) => new Date(b.date) - new Date(a.date));
+
 
   return (
     <div className="blog-list-wrapper blog__container">
