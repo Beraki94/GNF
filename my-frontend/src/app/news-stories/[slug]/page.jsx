@@ -1,20 +1,19 @@
-// app/blog/[slug]/page.jsx
 "use client";
 
-import { blogPosts } from "../../data/blogData"; // Adjust path as necessary
-import { notFound, useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
+import { blogPosts } from "../../data/blogData"; // adjust as needed
 import { ArrowLeft, CheckCircle } from "@phosphor-icons/react";
 import "../blog.css";
 
-export default function BlogDetailPage({ params }) {
-  const { slug } = params;
+export default function BlogDetailPage() {
+  const { slug } = useParams();
   const post = blogPosts.find((p) => p.slug === slug);
-
   const router = useRouter();
 
   if (!post) {
-    notFound();
+    return <div>Post not found</div>; // Fallback UI
   }
+
 
   function convertToEmbedUrl(url) {
     const match = url?.match(/(?:youtu\.be\/|v=|embed\/)([a-zA-Z0-9_-]+)/);
