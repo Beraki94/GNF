@@ -241,6 +241,35 @@ export const blogPosts = [
   },
 },
 
-  
+  {
+  id: 7,
+  slug: "godlight-empowerment-workshop-unn-2025",
+  title: "GODLIGHT EMPOWERMENT WORKSHOP – UNN",
+  shortDescription: "Join us at the University of Nigeria, Nsukka, for an impactful workshop on empowerment and community transformation.",
+  category: "Events",
+  date: "July 29, 2025",
+  readTime: "1 min read",
+  mainImage: {
+    url: "/empowermentMay/unn.event1.jpg", // you can update this path to your actual image
+    isVideo: false,
+  },
+  content1: `
+    <p><strong>GODLIGHT EMPOWERMENT WORKSHOP – UNN</strong></p>
+    <p>We joyfully invite you to the GodLight Workshop holding on <strong>Tuesday, 29th July 2025</strong> at the <strong>University of Nigeria, Nsukka</strong>.</p>
+    <p>📍 <strong>Venue & Time:</strong> Niger Hall, CEC University of Nigeria, Nsukka. <strong>9:00 AM prompt</strong>.</p>
+  `,
+  extraImages: [
+    {
+      url: "/empowermentMay/unn.event2.jpg",
+      alt: "GodLight Workshop venue at UNN"
+    }
+  ],
+  content2: ``,
+  author: {
+    name: "Empowerment Media Team",
+    title: "",
+  },
+}
+
 
 ];
