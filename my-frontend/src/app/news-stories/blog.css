@@ -208,18 +208,21 @@
 /* Image Gallery */
 .blog-detail-gallery {
   margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .blog-detail-gallery-image {
   width: 100%;
-  height: 180px;
+  max-width: 600px;
+  height: auto;
   object-fit: cover;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
+
 
 /* Author Info */
 .blog-detail-author {
