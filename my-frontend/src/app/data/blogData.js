@@ -55,6 +55,29 @@ export const blogPosts = [
       "Education and Scholarship Awareness",
       "Health Awareness and Wellness"
     ],
+    
+      extraImages: [
+    {
+      url: "/oouEvent/oouEvent2.jpg",
+      alt: "The GodLight International Conference Nigeria 2025"
+    },
+    {
+      url: "/oouEvent/oouEvent3.jpg",
+      alt: "The GodLight International Conference Nigeria 2025"
+    },
+    {
+      url: "/oouEvent/oouEvent4.jpg",
+      alt: "The GodLight International Conference Nigeria 2025"
+    },
+    {
+      url: "/oouEvent/oouEvent5.jpg",
+      alt: "The GodLight International Conference Nigeria 2025"
+    },
+    {
+      url: "/oouEvent/oouEvent6.jpg",
+      alt: "The GodLight International Conference Nigeria 2025"
+    },
+  ],
 
     content2: `<p>
                 These initiatives will be carried out prior to the 2027 conference in Nigeria, demonstrating the vibrant spirit of the GodLight Nigeria Foundation and her ongoing commitment to empowering communities and fostering development.
@@ -241,35 +264,115 @@ export const blogPosts = [
   },
 },
 
-  {
+{
   id: 7,
   slug: "godlight-empowerment-workshop-unn-2025",
-  title: "GODLIGHT EMPOWERMENT WORKSHOP – UNN",
-  shortDescription: "Join us at the University of Nigeria, Nsukka, for an impactful workshop on empowerment and community transformation.",
+  title: "GODLIGHT EMPOWERMENT WORKSHOP – University of Nigeria Nsukka, 2025",
+  shortDescription: "To God be the glory for the successful GodLight Empowerment Workshop at the University of Nigeria, Nsukka 2025!.",
   category: "Events",
-  date: "July 29, 2025",
+  date: "August 5, 2025",
   readTime: "1 min read",
   mainImage: {
     url: "/empowermentMay/unn.event1.jpg", // you can update this path to your actual image
     isVideo: false,
   },
   content1: `
-    <p><strong>GODLIGHT EMPOWERMENT WORKSHOP – UNN</strong></p>
-    <p>We joyfully invite you to the GodLight Workshop holding on <strong>Tuesday, 29th July 2025</strong> at the <strong>University of Nigeria, Nsukka</strong>.</p>
-    <p>📍 <strong>Venue & Time:</strong> Niger Hall, CEC University of Nigeria, Nsukka. <strong>9:00 AM prompt</strong>.</p>
+    <p><strong>GODLIGHT EMPOWERMENT WORKSHOP – UNN 2025</strong></p>
+    <p>A big thank you to the <strong>GodLight Foundation </strong>for this powerful initiative, and to everyone who showed up, participated, and contributed to making it a memorable experience. Your presence truly made a difference! With hearts full of gratitude, we boldly say: GodLight has come to stay in Nigeria!.</p>
+    <p>#GodLightWorkshop2025 #ThankfulHearts #GodLightNigeria </p>
   `,
   extraImages: [
     {
       url: "/empowermentMay/unn.event2.jpg",
       alt: "GodLight Workshop venue at UNN"
-    }
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_5.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_3.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_2.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_4.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_6.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_7.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_8.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_9.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_10.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_11.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_12.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_13.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_14.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_15.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_16.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_17.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_18.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_19.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_20.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+    {
+      url: "/unnEventAugust/godLightUnn2025_21.jpg",
+      alt: "GodLight Workshop UNN 2025"
+    },
+
   ],
   content2: ``,
   author: {
     name: "Empowerment Media Team",
     title: "",
   },
-}
-
+},
 
 ];
