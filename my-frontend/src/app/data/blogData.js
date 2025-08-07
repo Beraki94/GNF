@@ -278,7 +278,7 @@ export const blogPosts = [
   },
   content1: `
     <p><strong>GODLIGHT EMPOWERMENT WORKSHOP – UNN 2025</strong></p>
-    <p>A big thank you to the <strong>GodLight Foundation </strong>for this powerful initiative, and to everyone who showed up, participated, and contributed to making it a memorable experience. Your presence truly made a difference! With hearts full of gratitude, we boldly say: GodLight has come to stay in Nigeria!.</p>
+    <p>A heartfelt thank you to the <strong>GodLight Foundation</strong> for this impactful initiative! And to everyone who showed up, participated, and contributed — your support made it truly unforgettable. Your presence made all the difference. With grateful hearts, we boldly declare: <strong>GodLight is here to stay in Nigeria!</strong>.</p>
     <p>#GodLightWorkshop2025 #ThankfulHearts #GodLightNigeria </p>
   `,
   extraImages: [
