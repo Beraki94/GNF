@@ -8,19 +8,28 @@ import { CheckCircle, DownloadSimple, MagnifyingGlass } from "@phosphor-icons/re
 import "./learnPage.css";
 
 const articles = [
-    {
+  {
     id: 1,
     title: "GodLight International Conference 2025 Brochure Articles",
     author: "The Empowerment Team",
     fileUrl: "/article/conference2025articles.pdf", // Place your PDF in public/pdfs/
   },
- ];
+  {
+    id: 2,
+    title: "Book of Proceedings from the 2025 GodLight International Conference in Nigeria",
+    author: "The Empowerment Team",
+    fileUrl: "/article/godlightbookofproceedings.pdf", // Place your PDF in public/pdfs/
+  },
+];
 
 export default function LearnPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
 
-  const filteredArticles = articles.filter(
+  // Sort articles so the most recent (highest ID) comes first
+  const sortedArticles = [...articles].sort((a, b) => b.id - a.id);
+
+  const filteredArticles = sortedArticles.filter(
     (article) =>
       article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       article.author.toLowerCase().includes(searchQuery.toLowerCase())
@@ -36,75 +45,74 @@ export default function LearnPage() {
     <div className="learn-page">
       <PageHeader title="Flashes of GodLight" pageImage="/page2.jpg" />
       <section className="flash-section">
-  <div className="flash-section__container">
-    <h2 className="flash-section__title">
-      Illuminate Your Path: Have a GodLight Conversation
-    </h2>
+        <div className="flash-section__container">
+          <h2 className="flash-section__title">
+            Illuminate Your Path: Have a GodLight Conversation
+          </h2>
 
-    <div className="flash-section__columns">
-      <div className="flash-section__left">
-        <p>
-        <strong>The Flash of GodLight is a profound spiritual experience</strong> — a moment when the divine light is sensed within or around us, often accompanied by insight, warmth, and peace. It is not always dramatic; sometimes it is a gentle nudge or clarity that steers the soul. This section
-        invites you into a deeper understanding of how to perceive, nurture, and share the Flash in daily life.
-        </p>
-        <br/>
-        <p>
-        As a Lightseeker, you are on a quest for deeper understanding and connection. Now, take the next step by engaging in a transformative conversation with a GodLight Beacon
-        </p>
+          <div className="flash-section__columns">
+            <div className="flash-section__left">
+              <p>
+                <strong>The Flash of GodLight is a profound spiritual experience</strong> — a moment when the divine light is sensed within or around us, often accompanied by insight, warmth, and peace. It is not always dramatic; sometimes it is a gentle nudge or clarity that steers the soul. This section
+                invites you into a deeper understanding of how to perceive, nurture, and share the Flash in daily life.
+              </p>
+              <br />
+              <p>
+                As a Lightseeker, you are on a quest for deeper understanding and connection. Now, take the next step by engaging in a transformative conversation with a GodLight Beacon
+              </p>
 
-        <h3>What is a GodLight Conversation?</h3>
-        <p>
-          A GodLight Conversation is a unique opportunity to explore your own thoughts, feelings,
-          emotions, language and behaviors in relation to the concept of GodLight. Guided by a Beacon,
-          you will delve into how universal love and peace form the foundation of GodLight—a higher
-          order of understanding that connects us all.
-        </p>
-      </div>
+              <h3>What is a GodLight Conversation?</h3>
+              <p>
+                A GodLight Conversation is a unique opportunity to explore your own thoughts, feelings,
+                emotions, language and behaviors in relation to the concept of GodLight. Guided by a Beacon,
+                you will delve into how universal love and peace form the foundation of GodLight—a higher
+                order of understanding that connects us all.
+              </p>
+            </div>
 
-      <div className="flash-section__right">
-        <h3>Why a GodLight Conversation?</h3>
-        <ul className="flash-section__list">
-          <li>
-            <CheckCircle size={24} color="#3B3F58" weight="fill" />
-            <span>
-              <strong>Self-Exploration:</strong> Reflect on where you are now in your spiritual journey,
-              and articulate your thoughts, feelings, and behaviors in relation to GodLight.
-            </span>
-          </li>
-          <li>
-            <CheckCircle size={24} color="#3B3F58" weight="fill" />
-            <span>
-              <strong>Personal Growth:</strong> Discover how the concept of GodLight can illuminate your path,
-              fostering personal growth and emotional well-being.
-            </span>
-          </li>
-          <li>
-            <CheckCircle size={24} color="#3B3F58" weight="fill" />
-            <span>
-              <strong>Meaningful Dialogue:</strong> Engage in a deep, personal dialogue with a Beacon and
-              like-minded individuals who share your quest for enlightenment.
-            </span>
-          </li>
-          <li>
-            <CheckCircle size={24} color="#3B3F58" weight="fill" />
-            <span>
-              <strong>Universal Connection:</strong> Understand how GodLight transcends individual beliefs
-              and resonates with people of all backgrounds.
-            </span>
-          </li>
-        </ul>
-        <Link
-          target="_blank"
-          href="https://www.godlightsite.com/learn"
-          className="flash-section__cta"
-        >
-          www.godlightsite.com
-        </Link>
-        
-      </div>
-    </div>
-  </div>
-</section>
+            <div className="flash-section__right">
+              <h3>Why a GodLight Conversation?</h3>
+              <ul className="flash-section__list">
+                <li>
+                  <CheckCircle size={24} color="#3B3F58" weight="fill" />
+                  <span>
+                    <strong>Self-Exploration:</strong> Reflect on where you are now in your spiritual journey,
+                    and articulate your thoughts, feelings, and behaviors in relation to GodLight.
+                  </span>
+                </li>
+                <li>
+                  <CheckCircle size={24} color="#3B3F58" weight="fill" />
+                  <span>
+                    <strong>Personal Growth:</strong> Discover how the concept of GodLight can illuminate your path,
+                    fostering personal growth and emotional well-being.
+                  </span>
+                </li>
+                <li>
+                  <CheckCircle size={24} color="#3B3F58" weight="fill" />
+                  <span>
+                    <strong>Meaningful Dialogue:</strong> Engage in a deep, personal dialogue with a Beacon and
+                    like-minded individuals who share your quest for enlightenment.
+                  </span>
+                </li>
+                <li>
+                  <CheckCircle size={24} color="#3B3F58" weight="fill" />
+                  <span>
+                    <strong>Universal Connection:</strong> Understand how GodLight transcends individual beliefs
+                    and resonates with people of all backgrounds.
+                  </span>
+                </li>
+              </ul>
+              <Link
+                target="_blank"
+                href="https://www.godlightsite.com/learn"
+                className="flash-section__cta"
+              >
+                www.godlightsite.com
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="book-section" id="book">
         <div className="book-section__container">
@@ -135,6 +143,7 @@ export default function LearnPage() {
           </div>
         </div>
       </section>
+
       <section className="book-section">
         <div className="book-section__container">
           <div className="book-section__content">
@@ -185,6 +194,7 @@ export default function LearnPage() {
           </div>
         </div>
       </section>
+
       <section className="book-section">
         <div className="book-section__container">
           <div className="book-section__image" role="img" aria-label="Interview on People of Distinction Radio">
@@ -213,6 +223,7 @@ export default function LearnPage() {
           </div>
         </div>
       </section>
+
       <section className="article-download-section">
         <div className="article-download-section__container">
           <div className="article-download-section__header">

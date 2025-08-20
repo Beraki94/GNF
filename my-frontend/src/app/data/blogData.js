@@ -375,4 +375,51 @@ export const blogPosts = [
   },
 },
 
+{
+    id: 8,
+    slug: "godlight-empowerment-workshop-unn-2025-episode-1",
+    title: "WORKSHOP VIDEO– University of Nigeria Nsukka 2025 - Episode 1",
+    shortDescription: "Inspiring discussions and activities from the UNN 2025 Empowerment Workshop.",
+    category: "Videos",
+    date: "August 6, 2025",
+    readTime: "2 min read",
+    mainImage: {
+      url: "https://img.youtube.com/vi/ismREzYSsM4/hqdefault.jpg",
+      isVideo: true,
+      videoUrl: "https://www.youtube.com/embed/ismREzYSsM4?si=QBrnEXjdrxQcDbhl",
+    },
+
+    content1: `
+      <h2>GODLIGHT Empowerment Workshop, UNN 2025 - Episode 1</h2>
+    `,
+    author: {
+      name: "Empowerment Media Team",
+      title: "",
+    },
+  },
+
+  {
+  id: 9,
+  slug: "godlight-empowerment-workshop-unn-2025-episode-2",
+  title: "WORKSHOP VIDEO– University of Nigeria Nsukka 2025 - Episode 2",
+  shortDescription: "Inspiring discussions and activities from the UNN 2025 Empowerment Workshop.",
+  category: "Videos",
+  date: "August 6, 2025",
+  readTime: "2 min read",
+  mainImage: {
+    url: "https://img.youtube.com/vi/7E0rO7rzB4A/hqdefault.jpg",
+    isVideo: true,
+    videoUrl: "https://www.youtube.com/embed/7E0rO7rzB4A?si=jw9Uzcqop1z18Y9U",
+  },
+
+  content1: `
+    <h2>GODLIGHT Empowerment Workshop, UNN 2025 - Episode 2</h2>
+  `,
+  author: {
+    name: "Empowerment Media Team",
+    title: "",
+  },
+},
+
+
 ];
