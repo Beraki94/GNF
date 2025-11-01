@@ -419,7 +419,121 @@ export const blogPosts = [
     name: "Empowerment Media Team",
     title: "",
   },
-},
+}, 
+
+{
+  id: 10,
+  slug: "courtesy-visit-vice-chancellor-coou-2025",
+  title: "Courtesy Visit to the Vice Chancellor, Chukwuemeka Odumegwu Ojukwu University, Igbariam Campus, Anambra State",
+  shortDescription: "A remarkable courtesy visit highlighting GodLight Foundation’s scholarship initiative and partnership with COOU.",
+  category: "Godlight",
+  date: "September 2, 2025",
+  readTime: "4 min read",
+  mainImage: {
+    url: "/visittovcoou/visit1.jpg",
+    isVideo: false,
+  },
+
+  content1: `<p>
+    On Tuesday, <strong>2nd September, 2025</strong>, the Department of Religion and Human Relations, 
+    <strong>Chukwuemeka Odumegwu Ojukwu University (COOU)</strong>, led by the Head of Department, 
+    <strong>Rev. Sr. Dr. Emilia Aboekwe</strong>, paid a courtesy visit to the Vice Chancellor, 
+    <strong>Prof. Kate Azuka Omenugha, FNIPR</strong>, and the University Management. 
+    The highlight of the visit was the announcement of <strong>GodLight Foundation scholarships</strong> 
+    to students of the University.
+  </p>
+
+  <p>
+    After introducing the delegation, <strong>Prof. Jude Emeka Madu</strong> gave an insight into the mission 
+    of GodLight Foundation, describing it as a global initiative dedicated to transforming lives and 
+    building communities. He explained that the Foundation’s entry into Nigeria was made possible through 
+    the efforts of <strong>Rev. Sr. Dr. Aboekwe</strong> after her participation in an international 
+    conference in Spain, where she forged meaningful ties with the organization. In alignment with the 
+    Vice Chancellor’s vision of <em>Values, Viability, and Visibility</em>, the Foundation chose to begin its 
+    work in Nigeria at COOU, finding a natural home in the Department of Religion and Human Relations 
+    whose core values resonate with theirs.
+  </p>
+
+  <p>
+    <strong>Prof. Madu</strong> further informed the Vice Chancellor of the Foundation’s latest gesture — 
+    the award of <strong>full scholarships to five students</strong> in the University, with training 
+    support up to PhD level. He explained that three of the slots have been dedicated in honor of 
+    <strong>Prof. Omenugha</strong>, the 5th substantive Vice Chancellor of COOU, as a congratulatory 
+    tribute from the Founder and President of GodLight Foundation, <strong>Dr. Bart Barthelemy</strong> 
+    and <strong>Dr. Karen Williams Barthelemy</strong>.
+  </p>`,  
+
+  features: [
+    "GodLight Foundation Scholarships",
+    "Partnership with COOU Department of Religion and Human Relations",
+    "Promoting Values, Viability, and Visibility in Education"
+  ],
+
+  extraImages: [
+    {
+      url: "/visittovcoou/visit3.jpg",
+      alt: "godlight ambassedor. Omenugha addressing guests"
+      
+    },
+    {
+      url: "/visittovcoou/visit1.jpg",
+      alt: "Courtesy visit to the Vice Chancellor at COOU"
+    },
+
+    {
+      url: "/visittovcoou/visit4.jpg",
+      alt: "godlight empowerment team with GodLight representatives"
+    },
+  
+    {
+      url: "/visittovcoou/visit2.jpg",
+      alt: "godlight empowerment team with GodLight representatives"
+    }
+  ],
+
+  content2: `<p>
+    In her response, <strong>Prof. Omenugha</strong> expressed profound gratitude to GodLight Foundation 
+    for their generosity and to the Department of Religion and Human Relations for their vision. 
+    She described the initiative as evidence of the power of partnerships that place humanity first. 
+    According to her, “I studied Religion and for me, religion, at its core, teaches us to value and 
+    respect the dignity of every human being. At a time when the world is faced with conflict, insecurity, 
+    displacement, and deepening divisions, the study of Religion and Human Relations is not just important 
+    but urgent. It equips us with the tools to understand human diversity, to promote peace, and to build 
+    inclusive societies.”
+  </p>
+
+  <p>
+    While accepting the three scholarship slots dedicated to her, <strong>Prof. Omenugha</strong> 
+    magnanimously returned one to the Department as her personal contribution to encourage more students 
+    to study Religion and Human Relations. She emphasized that the discipline plays a unique role in 
+    preparing young people with values, empathy, and skills to manage human differences constructively.
+  </p>
+
+  <p>
+    The Vice Chancellor also commended the Department and GodLight Foundation for the successful 
+    international conference they jointly organized earlier this year, describing it as an inspiring 
+    platform that emphasized the relevance of faith, values, and human relations in today’s world. 
+    She reaffirmed her commitment to strengthening collaborations that uplift humanity and place COOU 
+    at the center of global academic and social impact.
+  </p>
+
+  <p>
+    With the <strong>GodLight Foundation scholarships</strong> now in place, the Department of Religion 
+    and Human Relations continues to open fresh opportunities for students, making it an exciting time 
+    to study at COOU. Indeed, what a time to study Religion and Human Relations, what a time to study at 
+    <strong>Chukwuemeka Odumegwu Ojukwu University!</strong>
+  </p>
+
+  <p>
+    <em>Love and Light</em><br/>
+  </p>`,
+
+  author: {
+    name: "Agubueze Onyekachi",
+    title: "Executive Secretary, GodLight Empowerment Foundation",
+  },
+}
+
 
 
 ];
