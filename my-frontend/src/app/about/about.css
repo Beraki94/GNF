@@ -303,3 +303,48 @@
     font-size: clamp(1.5rem, 4vw, 1.75rem);
   }
 }
+
+
+/* ===============================
+   Foundation Anthem Section
+   =============================== */
+.anthem-section {
+  padding: 4rem 1rem;
+  background-color: #ededed;
+  text-align: center;
+}
+
+.anthem-section__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.anthem-section__title {
+  font-size: 2rem;
+  color: #1d100a;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.anthem-section__video {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+  .anthem-section__video {
+    height: 250px;
+  }
+
+  .anthem-section__title {
+    font-size: 1.5rem;
+  }
+}

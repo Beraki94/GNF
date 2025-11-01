@@ -167,6 +167,21 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <hr/>
+      {/* Foundation Anthem Section */}
+      <section className="anthem-section">
+        <div className="anthem-section__container">
+          <h2 className="anthem-section__title">GodLight Foundation Anthem</h2>
+          <video
+            className="anthem-section__video"
+            src="/gnf.anthem.video/anthem.mp4"
+            controls
+            preload="metadata"
+            playsInline
+          />
+        </div>
+      </section>
+
       <section className="about-section">
         <div className="about-section__container">
           <h2 className="about-section__title">GodLight Team - Global</h2>
