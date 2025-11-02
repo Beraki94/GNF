@@ -4,7 +4,7 @@ export const blogPosts = [
     slug: "godlight-international-conference-nigeria-2025",
     title: "Celebrating Enlightenment: The GodLight International Conference Nigeria 2025",
     shortDescription: "A transformative gathering exploring faith, community, and growth.",
-    category: "Godlight",
+    category: "Events",
     date: "May 3, 2025",
     readTime: "3 min read",
     mainImage: {
