@@ -540,7 +540,7 @@ export const blogPosts = [
   title: "The 2nd GodLight Empowerment Workshop: A Powerful Success",
   shortDescription: "A day of wisdom, motivation, and transformation — inspiring participants to shine their light brighter.",
   category: "Godlight",
-  date: "October 2025",
+  date: "October 24, 2025",
   readTime: "2 min read",
   mainImage: {
     url: "/empowermentworkshop2/comf7.jpg",
