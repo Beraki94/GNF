@@ -532,6 +532,87 @@ export const blogPosts = [
     name: "Agubueze Onyekachi",
     title: "Executive Secretary, GodLight Empowerment Foundation",
   },
+},
+
+{
+  id: 11,
+  slug: "2nd-godlight-empowerment-workshop-2025",
+  title: "The 2nd GodLight Empowerment Workshop: A Powerful Success",
+  shortDescription: "A day of wisdom, motivation, and transformation — inspiring participants to shine their light brighter.",
+  category: "Godlight",
+  date: "October 2025",
+  readTime: "2 min read",
+  mainImage: {
+    url: "/empowermentworkshop2/comf7.jpg",
+    isVideo: false,
+  },
+
+  content1: `<p>
+    The <strong>2nd GodLight Empowerment Workshop</strong> was a powerful success — filled with 
+    <strong>wisdom, motivation, and transformation!</strong>
+  </p>
+
+  <p>
+    We are deeply grateful to <strong>GodLight Foundation</strong>, 
+    <strong>Dr. Bart Barthelemy</strong>, <strong>Dr. Karen Barthelemy Williams</strong>, 
+    and <strong>Carl Gaertner</strong> for their unwavering support and contribution 
+    to this life-changing experience.
+  </p>
+
+  <p>
+    Special appreciation to the <strong>Ambassador, GodLight Foundation</strong>, 
+    <strong>Rev. Sr. Dr. Emilia Aboekwe (IHM)</strong>, for bringing this wonderful 
+    opportunity to the people of Nigeria and for her tireless dedication to empowering lives.
+  </p>`,
+
+  features: [
+    "Wisdom-filled empowerment sessions",
+    "Motivational and spiritual insights",
+    "Transformational community engagement"
+  ],
+
+  extraImages: [
+    {
+      url: "/empowermentworkshop2/comf1.jpg",
+      alt: "Participants at the 2nd GodLight Empowerment Workshop"
+    },
+    {
+      url: "/empowermentworkshop2/comf2.jpg",
+      alt: "Group photo at the 2nd GodLight Empowerment Workshop"
+    },
+    {
+      url: "/empowermentworkshop2/comf3.jpg",
+      alt: "Guest speakers sharing inspiring messages"
+    },
+    {
+      url: "/empowermentworkshop2/comf4.jpg",
+      alt: "Participants at the 2nd GodLight Empowerment Workshop"
+    },
+    {
+      url: "/empowermentworkshop2/comf5.jpg",
+      alt: "Group photo at the 2nd GodLight Empowerment Workshop"
+    },
+    {
+      url: "/empowermentworkshop2/comf6.jpg",
+      alt: "Guest speakers sharing inspiring messages"
+    }
+  ],
+
+  content2: `<p>
+    We also extend our sincere appreciation to everyone who attended and contributed 
+    to this beautiful experience. To all our beneficiaries — keep practicing the 
+    valuable lessons and insights shared by our amazing lecturers. 
+    Continue to grow, shine, and be a <strong>LIGHT</strong> wherever you go.
+  </p>
+
+  <p>
+    <em>Love and Light</em><br/>
+  </p>`,
+
+  author: {
+    name: "Agubueze Onyekachi",
+    title: "Executive Secretary, GodLight Empowerment Foundation",
+  },
 }
 
 
