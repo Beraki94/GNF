@@ -613,8 +613,110 @@ export const blogPosts = [
     name: "Agubueze Onyekachi",
     title: "Executive Secretary, GodLight Empowerment Foundation",
   },
+},
+
+{
+  id: 12,
+  slug: "coou-student-orientation-enlightenment-workshop-2026",
+  title: "COOU Student Orientation & Enlightenment Workshop 2026",
+  shortDescription: "A powerful enlightenment workshop empowering students at Chukwuemeka Odumegwu Ojukwu University.",
+  category: "Events",
+  date: "February 17, 2026",
+  readTime: "2 min read",
+  mainImage: {
+    url: "/Orientationempower2026/orientation08.jpg", // update with your main flyer or first image
+    isVideo: false,
+  },
+
+  content1: `
+    <p>
+      The <strong>GodLight Foundation</strong>, in collaboration with 
+      <strong>Chukwuemeka Odumegwu Ojukwu University (COOU)</strong>, hosted a remarkable 
+      <strong>Student Orientation and Enlightenment Workshop</strong> for the 2025/2026 academic session.
+    </p>
+
+    <p>
+      Held on <strong>February 17, 2026</strong>, at the COOU campus in Igbariam, Anambra State, 
+      the workshop brought together students, educators, and thought leaders for a day filled with 
+      insight, inspiration, and empowerment.
+    </p>
+
+    <p>
+      With the theme <strong>“COOU 3Vs in Action: Educating Minds, Empowering Futures”</strong>, 
+      the event emphasized the importance of values, knowledge, and personal development in shaping 
+      the next generation of leaders.
+    </p>
+
+    <p>
+      Participants were encouraged to embrace growth, think beyond limitations, and actively contribute 
+      to building a better society through education and character.
+    </p>
+  `,
+
+  features: [
+    "Student Orientation & Personal Development",
+    "Empowerment and Leadership Insights",
+    "Collaboration between COOU and GodLight Foundation"
+  ],
+
+  extraImages: [
+    {
+      url: "/Orientationempower2026/orientation01.jpg",
+      alt: "COOU Enlightenment Workshop 2026"
+    },
+    {
+      url: "/Orientationempower2026/orientation02.jpg",
+      alt: "Students at COOU workshop session"
+    },
+    {
+      url: "/Orientationempower2026/orientation07.jpg",
+      alt: "Guest speaker addressing students"
+    },
+    {
+      url: "/Orientationempower2026/orientation04.jpg",
+      alt: "Participants at enlightenment workshop"
+    },
+    {
+      url: "/Orientationempower2026/orientation05.jpg",
+      alt: "Workshop engagement session"
+    },
+    {
+      url: "/Orientationempower2026/orientation06.jpg",
+      alt: "Group interaction at COOU event"
+    }
+  ],
+
+  content2: `
+    <h2>Watch the Full Workshop Sessions</h2>
+    <p>
+      The full sessions from this impactful workshop are now available on YouTube. 
+      These videos capture all activities from the event, providing valuable insights 
+      and teachings shared during the program.
+    </p>
+
+    <p><strong>Kindly watch in order:</strong></p>
+
+    <ul>
+      <li><a href="https://www.youtube.com/embed/xgQAmyLw3d8" target="_blank">Workshop Video – Part 1</a></li>
+      <li><a href="https://www.youtube.com/embed/jS91rED4WKU" target="_blank">Workshop Video – Part 2</a></li>
+      <li><a href="https://www.youtube.com/embed/SfTLWt8qXXs" target="_blank">Workshop Video – Part 3</a></li>
+    </ul>
+
+    <p>
+      You can also connect with us and explore more of our work on our YouTube channel:
+      <strong>@GodLightempowermentfoundation</strong>
+    </p>
+
+    <p>
+      This workshop stands as a testament to the commitment of the GodLight Foundation 
+      to inspire, educate, and empower young minds across Nigeria.
+    </p>
+  `,
+
+  author: {
+    name: "Empowerment Media Team",
+    title: "",
+  },
 }
-
-
 
 ];
