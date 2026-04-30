@@ -617,22 +617,23 @@ export const blogPosts = [
 
 {
   id: 12,
-  slug: "coou-student-orientation-enlightenment-workshop-2026",
-  title: "COOU Student Orientation & Enlightenment Workshop 2026",
-  shortDescription: "A powerful enlightenment workshop empowering students at Chukwuemeka Odumegwu Ojukwu University.",
+  slug: "godlight-enlightenment-workshop-coou-fresh-student-orientation-2026",
+  title: "GodLight Enlightenment Workshop / COOU Fresh Student Orientation 2026",
+  shortDescription: "GodLight Enlightenment Workshop and COOU Fresh Student Orientation 2026 focused on educating minds and empowering futures.",
   category: "Events",
   date: "February 17, 2026",
   readTime: "2 min read",
   mainImage: {
-    url: "/Orientationempower2026/orientation08.jpg", // update with your main flyer or first image
+    url: "/orientationempower2026/orientation08.jpg",
     isVideo: false,
   },
 
   content1: `
     <p>
       The <strong>GodLight Foundation</strong>, in collaboration with 
-      <strong>Chukwuemeka Odumegwu Ojukwu University (COOU)</strong>, hosted a remarkable 
-      <strong>Student Orientation and Enlightenment Workshop</strong> for the 2025/2026 academic session.
+      <strong>Chukwuemeka Odumegwu Ojukwu University (COOU)</strong>, hosted the 
+      <strong>GodLight Enlightenment Workshop / COOU Fresh Student Orientation 2026</strong> 
+      for the 2025/2026 academic session.
     </p>
 
     <p>
@@ -661,27 +662,27 @@ export const blogPosts = [
 
   extraImages: [
     {
-      url: "/Orientationempower2026/orientation01.jpg",
+      url: "/orientationempower2026/orientation01.jpg",
       alt: "COOU Enlightenment Workshop 2026"
     },
     {
-      url: "/Orientationempower2026/orientation02.jpg",
+      url: "/orientationempower2026/orientation02.jpg",
       alt: "Students at COOU workshop session"
     },
     {
-      url: "/Orientationempower2026/orientation07.jpg",
+      url: "/orientationempower2026/orientation07.jpg",
       alt: "Guest speaker addressing students"
     },
     {
-      url: "/Orientationempower2026/orientation04.jpg",
+      url: "/orientationempower2026/orientation04.jpg",
       alt: "Participants at enlightenment workshop"
     },
     {
-      url: "/Orientationempower2026/orientation05.jpg",
+      url: "/orientationempower2026/orientation05.jpg",
       alt: "Workshop engagement session"
     },
     {
-      url: "/Orientationempower2026/orientation06.jpg",
+      url: "/orientationempower2026/orientation06.jpg",
       alt: "Group interaction at COOU event"
     }
   ],
