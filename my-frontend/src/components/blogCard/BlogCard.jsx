@@ -18,7 +18,7 @@ const BlogCard = ({ title, description, slug, date, readTime, mainImage }) => {
           fill
           className="blog__img"
           sizes="(max-width: 768px) 100vw, 400px"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "top" }}
           unoptimized={isExternal}
         />
         {mainImage?.isVideo && (

@@ -118,8 +118,8 @@
   width: 100%;
   height: auto;
   border-radius: var(--radius-md);
-  object-fit: cover;
-  max-height: 450px;
+  object-fit: contain;
+  max-height: 700px;
 }
 
 .blog-detail-video-wrapper {
@@ -306,7 +306,7 @@
   }
 
   .blog-detail-image {
-    max-height: 400px;
+    max-height: 500px;
   }
 }
 
@@ -341,7 +341,7 @@
   }
 
   .blog-detail-image {
-    max-height: 350px;
+    max-height: 450px;
   }
 
   .blog-detail-video-wrapper iframe {
@@ -404,7 +404,7 @@
   }
 
   .blog-detail-image {
-    max-height: 300px;
+    max-height: 400px;
   }
 
   .blog-detail-video-wrapper iframe {

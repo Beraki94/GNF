@@ -718,6 +718,62 @@ export const blogPosts = [
     name: "Empowerment Media Team",
     title: "",
   },
+},
+
+{
+  id: 13,
+  slug: "2nd-godlight-international-conference-2027-lagos",
+  title: "2ND GODLIGHT INTERNATIONAL CONFERENCE 2027 – LAGOS",
+  shortDescription: "Join us for an inspiring interdisciplinary conversation exploring the relationship between science, theology, education, creation, humanity, and the universe.",
+  category: "Events",
+  date: "September 22, 2026",
+  readTime: "3 min read",
+  mainImage: {
+    url: "/2027conference/godlightannualconference2027.jpg",
+    isVideo: false,
+  },
+  content1: `
+    <p>
+      <strong>GodLight Foundation</strong>, in collaboration with <strong>Chukwuemeka Odumegwu Ojukwu University</strong> and <strong>St. Augustine College of Education, Lagos</strong>, presents the <strong>2027 GodLight International Conference</strong>.
+    </p>
+    <p>
+      <strong>Theme:</strong> “GodLight: The Intersection of Science, Theology, and Education in Understanding the Architecture of the Universe.”
+    </p>
+    <p>
+      The conference brings together scholars, scientists, theologians, educators, researchers, and students for meaningful interdisciplinary discussions on science, theology, education, technology, ethics, human development, peace, and the future of humanity.
+    </p>
+    <h2>Event Details</h2>
+    <ul>
+      <li><strong>Arrival:</strong> May 18, 2027</li>
+      <li><strong>Opening Ceremony:</strong> May 19, 2027</li>
+      <li><strong>Plenary Sessions:</strong> May 20, 2027</li>
+      <li><strong>Departure:</strong> May 21, 2027</li>
+      <li><strong>Venue:</strong> St. Augustine College of Education, Akoka, Lagos</li>
+    </ul>
+    <h2>Call for Abstracts</h2>
+    <p>
+      Submit a 200–300 word abstract related to the conference theme or sub-themes.<br/>
+      <strong>Deadline:</strong> March 30, 2027<br/>
+      <strong>Email:</strong> <a href="mailto:godlight268@gmail.com">godlight268@gmail.com</a>
+    </p>
+    <h2>Registration</h2>
+    <ul>
+      <li><strong>Regular:</strong> ₦20,000</li>
+      <li><strong>Students:</strong> ₦10,000</li>
+    </ul>
+    <h2>Virtual Participation</h2>
+    <p>
+      For participants who are far away and unable to travel to Lagos State, virtual participation will be provided to enable them to join the conference remotely.
+    </p>
+    <p>
+      Join us for an inspiring interdisciplinary conversation exploring the relationship between science, theology, education, creation, humanity, and the universe.
+    </p>
+    <p><em>Lighting Paths, Lifting Lives.</em></p>
+  `,
+  author: {
+    name: "GodLight Foundation",
+    title: "Event Organizer",
+  },
 }
 
 ];
