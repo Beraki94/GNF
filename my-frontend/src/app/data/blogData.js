@@ -774,6 +774,48 @@ export const blogPosts = [
     name: "GodLight Foundation",
     title: "Event Organizer",
   },
+},
+
+{
+  id: 14,
+  slug: "godlight-foundation-nigeria-2026-fmcg-festival",
+  title: "GodLight Foundation Nigeria at the 2026 FMCG Festival",
+  shortDescription: "GodLight Foundation Nigeria engaged with participants, industry stakeholders, and spectators at the three-day 2026 FMCG Festival to share our vision and commitment to youth development.",
+  category: "Events",
+  date: "November 11, 2026",
+  readTime: "1 min read",
+  mainImage: {
+    url: "/fmcg2026/fmcg1.jpg",
+    isVideo: false,
+  },
+  content1: `
+    <p>
+      The <strong>2026 FMCG Festival</strong>, which commenced on <strong>9th November</strong> and concluded today, <strong>11th November</strong>, was an exciting and enriching experience for <strong>GodLight Foundation Nigeria</strong>.
+    </p>
+    <p>
+      Throughout the three-day event, our team engaged with fellow participants, industry stakeholders, and spectators, sharing insights about our work, vision, and commitment to youth development.
+    </p>
+    <p>
+      It was a valuable opportunity to connect, exchange ideas, build relationships, and create awareness about the impact of our initiatives.
+    </p>
+  `,
+  extraImages: [
+    {
+      url: "/fmcg2026/fmcg2.jpg",
+      alt: "GodLight Foundation Nigeria team engaging at the 2026 FMCG Festival"
+    },
+    {
+      url: "/fmcg2026/fmcg3.jpg",
+      alt: "Highlights from the 2026 FMCG Festival with GodLight Foundation Nigeria"
+    }
+  ],
+  content2: `
+    <p><em>Love and Light! ✨</em></p>
+  `,
+  author: {
+    name: "GodLight Foundation Nigeria",
+    title: "",
+  },
 }
 
 ];
